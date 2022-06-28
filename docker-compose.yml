@@ -20,3 +20,14 @@ services:
       - CHOKIDAR_USEPOLLING=true
     env_file:
       - ./server/.env
+  mysql:
+    image: mysql:8
+    volumes:
+      - alkymiaDB:/var/lib/mysql
+    ports: 
+      - "3306:3306"
+    env_file:
+      - ./server/.env
+
+volumes:
+  alkymiaDB:
