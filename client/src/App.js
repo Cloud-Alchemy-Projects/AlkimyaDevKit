@@ -17,19 +17,20 @@ const AppContainer = styled.div`
 
 function App() {
 	return (
-        <BrowserRouter>
-            
-            <AppContainer>
-              <AccountBox />
-            </AppContainer>
 
-            <div>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/other" component={Other} />
-                </Switch>
-            </div>
+        <AppContainer>
+          <AccountBox />
+        </AppContainer>
+        /*
+        <BrowserRouter>
+          <div>
+            {/*<Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/other" component={Other} />
+            </Switch>
+          </div>
         </BrowserRouter>
+        */
     );
 }
 
