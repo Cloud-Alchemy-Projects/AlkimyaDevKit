@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import submitRouter from './routes/test.js'
 import cors from "cors";
+import { db } from "./connection/sqlConnection.js";
 const app = express();
 
 app.use(bodyParser.json({ limit: "300mb", extended: true }));
@@ -15,3 +16,4 @@ const PORT = process.env.PORT || 1010;
 app.listen(PORT, () =>{
     console.log(`Server running at port ${PORT}`);
 })
+console.log(db);
