@@ -1,3 +1,5 @@
+/* PANTALLA INICIAL DE NUESTRO LOGIN PAGE, SOLICITANDO ID Y PASSWORD*/
+
 import React, { useContext } from "react";
 import {
   BoldLink,
@@ -16,20 +18,24 @@ export function LoginForm(props) {
   return (
     <BoxContainer>
       <FormContainer>
-        <Input type="email" placeholder="ID" />
+        <Input type="text" placeholder="ID" />
         <Input type="password" placeholder="Contraseña" />
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
-      <MutedLink href="#">Olvido su contraseña?</MutedLink>
+      <MutedLink href="#">
+        <BoldLink href="#" onClick={switchToSignup}>
+          Olvido su contraseña?
+        </BoldLink>
+      </MutedLink>
       <Marginer direction="vertical" margin="1.6em" />
       <SubmitButton type="submit">Entrar</SubmitButton>
       <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
+      {/* <MutedLink href="#">
         No tiene cuenta?{" "}
         <BoldLink href="#" onClick={switchToSignup}>
           Registrese
         </BoldLink>
-      </MutedLink>
+      </MutedLink> */}
     </BoxContainer>
   );
 }

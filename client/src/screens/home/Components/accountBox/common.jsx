@@ -79,6 +79,6 @@ export const SubmitButton = styled.button`
   );
 
   &:hover {
-    filter: brightness(1.03);
+    filter: brightness(1.15);
   }
 `;
