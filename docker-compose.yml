@@ -23,7 +23,7 @@ services:
     env_file:
       - ./server/.env
   mysql:
-    image: mysql:8-oracle
+    image: mysql:8
     platform: linux/amd64
     volumes:
       - alkymiaDB:/var/lib/mysql
