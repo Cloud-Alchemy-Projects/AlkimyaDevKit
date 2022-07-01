@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Home from "./screens/home/Home";
 import Other from "./screens/other/Other";
-import { AccountBox } from "./screens/home/Components/accountBox";
+import { AccountBox } from "./screens/home/Components/accountBox/index";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -17,20 +17,20 @@ const AppContainer = styled.div`
 
 function App() {
 	return (
-
-        <AppContainer>
-          <AccountBox />
+<>
+         <AppContainer> 
+          <AccountBox /> 
         </AppContainer>
-        /*
-        <BrowserRouter>
+        
+        {/* <BrowserRouter>
           <div>
-            {/*<Switch>
+            <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/other" component={Other} />
             </Switch>
           </div>
-        </BrowserRouter>
-        */
+        </BrowserRouter> */}
+        </>
     );
 }
 

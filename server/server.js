@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import submitRouter from './routes/test.js'
 import cors from "cors";
-import { db } from "./connection/sqlConnection.js";
+import { db } from "./database/sqlConnection.js";
 const app = express();
 
 app.use(bodyParser.json({ limit: "300mb", extended: true }));
