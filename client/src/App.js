@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./screens/home/Home";
 import Other from "./screens/other/Other";
-import { AccountBox } from "./screens/home/components/accountBox/index";
 
 function App() {
 	return (
