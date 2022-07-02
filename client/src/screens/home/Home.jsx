@@ -1,5 +1,5 @@
 import React from 'react';
-import AccountBox from './Components/accountBox';
+import {AccountBox} from './Components/accountBox';
 import useStyles from "./styles";
 
 const Home = () => {
