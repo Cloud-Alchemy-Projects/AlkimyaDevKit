@@ -1,4 +1,4 @@
-# Alkimya Dev Kit
+# Alkimya DevKit
 
 This application is for the use of Cloud Alchemy Members
 
