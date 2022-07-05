@@ -1,0 +1,135 @@
+.backbroundLogin {
+    width: 100%;
+    height: 100vh;
+    background: url('./img/ryan-tang-8OyZGH43-p4-unsplash.jpg');
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  /* Logo - Falta agregar el tamaño para la imagen */
+  
+  .logoImageContainer {
+    width: 5%;
+    padding: 2%
+  }
+  
+  /* Tittle */
+  
+  .timelessTittle {
+    margin-left: 0;
+    margin-top: 10%;
+    width: 50.5%;
+    word-spacing: 9999999px;
+    font-size: 2.5rem;
+  }
+  
+  /* Input container */
+  
+  .inputContainer {
+    background-color: #E20074;
+    margin-right: 7.3%;
+    width: 25%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoContainer {
+    width: 100%;
+    margin-top: 40px;
+    line-height: 0.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .h2-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .logoContainer h1 {
+    font-weight: bold;
+    text-align: right;
+    padding: 0;
+  }
+  
+  .logoContainer h2 {
+    font-weight:200;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .inputForms {
+    width: 100%;
+    padding: 0 10%;
+    line-height: 0rem;
+  }
+  
+  .inputForms input {
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    padding: 4%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+  }
+  
+  .inputForms button {
+    width: 50%;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 1.5rem;
+    padding: 4%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 50%;
+  }
+  
+  /* Hamburguer menu */
+  
+  .hamburguerMenu {
+    margin: 1%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .hamburguerMenu span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: white;
+    border-radius: 6px;
+    z-index: 1;
+    transform-origin: 0 0;
+  
+    transition: 0.4s;
+  }
+  
+  .hamburguerMenu span:nth-child(3) {
+    width: 15px;
+  }
+  
