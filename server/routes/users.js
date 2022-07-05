@@ -1,8 +1,8 @@
 import express from "express";
-import {sendTest} from "../controllers/test.js"
+import {sendUsers} from "../controllers/users.js"
 
 const router = express.Router()
 
-router.get("/", sendTest)
+router.get("/", sendUsers)
 
 export default router;

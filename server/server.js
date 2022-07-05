@@ -1,19 +1,19 @@
 import express from "express";
 import bodyParser from "body-parser";
-import submitRouter from './routes/test.js'
+import usersRoutes from './routes/users.js'
+import projectsRoutes from './routes/projects.js'
 import cors from "cors";
-import { db } from "./database/sqlConnection.js";
 const app = express();
 
 app.use(bodyParser.json({ limit: "300mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "300mb", extended: true }));
 app.use(cors());
 
-app.use('/test', submitRouter)
+app.use('/users', usersRoutes)
+app.use('/projects', projectsRoutes)
 // Server configuration
 const PORT = process.env.PORT || 1010;
 
 app.listen(PORT, () =>{
     console.log(`Server running at port ${PORT}`);
 })
-console.log(db);

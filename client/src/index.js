@@ -1,19 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
+import theme from "./assets/theme"
 import { ThemeProvider } from '@mui/material/styles';
 import {Provider} from "react-redux"
 import {createStore, applyMiddleware, compose} from "redux"
 import thunk from "redux-thunk"
 import reducers from "./reducers"
-// const store = createStore(reducers, compose(applyMiddleware(thunk)))
-import theme from "./assets/theme"
+const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 ReactDOM.render(
-    // <Provider store={store}>
     <ThemeProvider theme={theme}>
-        <App/>
+        <Provider store={store}>
+                <App/>
+        </Provider>
     </ThemeProvider>
-    // </Provider>
 , document.getElementById('root'));
