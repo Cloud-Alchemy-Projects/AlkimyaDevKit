@@ -1,9 +1,9 @@
 import React from "react";
-import { TextField, Button, InputAdornment } from "@mui/material";
+import { TextField, Button, InputAdornment, Typography } from "@mui/material";
 import useStyles from "../styles";
 import { AddCircleOutline, Search, AccountCircle } from "@mui/icons-material";
 
-const TopBar = () => {
+const TopBar = ({color}) => {
 	const classes = useStyles();
 
 	return (
@@ -11,11 +11,11 @@ const TopBar = () => {
 			<div className={classes.appBar}>
 				<div className={classes.rightContainer}>
 					<div className={classes.textToRight}>
-						<h1 className={classes.h1bar}>
-							Alkimya{" "}
-							<strong className={classes.toPink}>Dev</strong>Kit
-						</h1>
-						<h5 className={classes.h5Bar}>by Cloud Alchemy</h5>
+                        <Typography variant="h4" sx={{color: color}}>
+                            Alkimya{" "}
+                            <strong className={classes.toPink}>Dev</strong>Kit
+                        </Typography>
+                        <Typography variant="body2" sx={{color: color}}>by Cloud Alchemy</Typography>                    
 					</div>
 				</div>
 				<div className={classes.leftContainer}>

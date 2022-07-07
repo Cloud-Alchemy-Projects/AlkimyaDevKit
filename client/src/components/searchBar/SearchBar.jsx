@@ -7,7 +7,7 @@ const SearchBar = () => {
 
     return (
         <>
-            <TopBar/>
+            <TopBar color="black"/>
         </>
     )
 }

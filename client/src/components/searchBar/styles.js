@@ -39,11 +39,4 @@ export default makeStyles(() => ({
         alignItems: 'center',
         marginRight: '30px'
     },
-    h1bar: {
-        fontWeight: '400'
-    },
-    h5Bar: {
-        margin: '0px',
-        fontWeight: 'normal'
-    }
 }));
