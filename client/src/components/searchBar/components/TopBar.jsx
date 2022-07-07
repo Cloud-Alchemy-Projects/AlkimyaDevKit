@@ -1,7 +1,7 @@
 import React from "react";
 import { TextField, Button, InputAdornment, Typography } from "@mui/material";
 import useStyles from "../styles";
-import { AddCircleOutline, Search, AccountCircle } from "@mui/icons-material";
+import { AddCircleOutline, Search } from "@mui/icons-material";
 
 const TopBar = ({color}) => {
 	const classes = useStyles();
