@@ -1,3 +1,4 @@
+-- Active: 1656693754180@@localhost@3308@alkimyaDevKit
 DROP DATABASE IF EXISTS alkimyaDevKit;
 CREATE DATABASE alkimyaDevKit
 CHARACTER SET utf8
@@ -19,7 +20,7 @@ CREATE TABLE usuarios
     NombreUsuario			VARCHAR(20),
     ApellidoPaterno		VARCHAR(20),
     ApellidoMaterno		VARCHAR(20),
-    Contrasena      VARCHAR(20),
+    Contrasena      VARCHAR(100),
     TipoDeUsuario		INT,
     
     FOREIGN KEY (TipoDeUsuario) REFERENCES tipoUsuarios (IdTipo),
