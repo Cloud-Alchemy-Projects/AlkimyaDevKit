@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
-html,
+/* html,
 body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+} */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
+/* body {
   margin: 0;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
@@ -28,4 +31,4 @@ code {
 #root {
   width: 100%;
   height: 100%;
-}
+} */
