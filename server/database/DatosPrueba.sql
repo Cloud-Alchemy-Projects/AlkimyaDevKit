@@ -1,3 +1,4 @@
+-- Active: 1656693754180@@localhost@3308@alkimyaDevKit
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Architect');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Scientist');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Process Designer');
@@ -9,21 +10,21 @@ INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Scrum Master');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Back End');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Front End');
 
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','TSystems',1);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','TSystems',1);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','TSystems',1);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (722,'Jonathan','Valencia','Tescucano','TSystems',2);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (899,'Juan','Pérez','Pérez','TSystems',3);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (745,'Hilda','López','Díaz','TSystems',4);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (346,'Juana','Hernández','Hernández','TSystems',5);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (856,'Pedro','Rodríguez','Ordaz','TSystems',6);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (260,'David','Morales','Pérez','TSystems',7);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (429,'Genaro','Díaz','Ordaz','TSystems',8);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (390,'María','Juanes','Márquez','TSystems',9);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (456,'Andrea','Aedo','Santana','TSystems',10);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (952,'Guillermo','Peña','López','TSystems',9);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (100,'Víctor','Rodríguez','Moreno','TSystems',8);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (400,'Santiago','Pineda','Morales','TSystems',4);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','TSystems',1);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','TSystems',1);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','TSystems',1);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (722,'Jonathan','Valencia','Tescucano','TSystems',2);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (899,'Juan','Pérez','Pérez','TSystems',3);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (745,'Hilda','López','Díaz','TSystems',4);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (346,'Juana','Hernández','Hernández','TSystems',5);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (856,'Pedro','Rodríguez','Ordaz','TSystems',6);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (260,'David','Morales','Pérez','TSystems',7);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (429,'Genaro','Díaz','Ordaz','TSystems',8);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (390,'María','Juanes','Márquez','TSystems',9);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (456,'Andrea','Aedo','Santana','TSystems',10);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (952,'Guillermo','Peña','López','TSystems',9);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (100,'Víctor','Rodríguez','Moreno','TSystems',8);
+-- INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (400,'Santiago','Pineda','Morales','TSystems',4);
 
 
 INSERT INTO companias (nombreCompania) VALUES ('T-Systems');
