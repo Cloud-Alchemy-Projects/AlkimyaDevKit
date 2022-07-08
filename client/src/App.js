@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "./screens/home/Home";
 import Other from "./screens/other/Other";
