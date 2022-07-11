@@ -24,10 +24,6 @@ const Projects = () => {
                 <div className={classes.formsContainer}>
 
                     <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                        <Grid item xs={6}>
-                            <Typography align="left" variant="h3" className={classes.formsTypo}>Project ID</Typography>
-                            <TextField hiddenLabel className={classes.textField} variant="outlined" focused InputProps={{ disableUnderline: true, spellCheck: 'false'}} />
-                        </Grid>
 
                         <Grid item xs={6}>
                             <Typography align="left" variant="h3" className={classes.formsTypo}>Project Name</Typography>
