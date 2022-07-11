@@ -1,14 +1,16 @@
 import React from 'react'
 import useStyles from './styles'
 import TopBar from './components/TopBar'
+import BottomBar from './components/BottomBar'
 
-const SearchBar = () => {
+const SearchBar = ({color}) => {
     const classes = useStyles()
 
     return (
-        <>
-            <TopBar color="black"/>
-        </>
+        <div className={classes.searchContainer}>
+            <TopBar color={color}/>
+            <BottomBar/>
+        </div>
     )
 }
 
