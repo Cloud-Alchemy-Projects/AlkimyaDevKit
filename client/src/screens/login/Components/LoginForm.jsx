@@ -13,7 +13,7 @@ const LoginForm = () => {
     const onSubmit = (event) => {
         event.preventDefault();
         console.log(user)
-        history.push("/projects")
+        history.push("/story")
     }
 
     return(
