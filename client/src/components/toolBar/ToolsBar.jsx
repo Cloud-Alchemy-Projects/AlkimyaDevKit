@@ -2,13 +2,13 @@ import React from 'react'
 import useStyles from './styles'
 import LeftBar from './components/LeftBar'
 
-const ToolsBar = () => {
+const ToolsBar = ({user}) => {
  
     const classes = useStyles()
 
     return(
         <>
-            <LeftBar/>
+            <LeftBar user={user}/>
         </>
     )
 }
