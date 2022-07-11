@@ -1,21 +1,21 @@
 import React from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-//import Home from "./screens/home/Home";
-//import Other from "./screens/other/Other";
-import SearchBar from "./components/searchBar/SearchBar";
-import ToolsBar from "./components/toolBar/ToolsBar";
+import Login from "./screens/login/Login";
+import Home from "./screens/home/Home";
+//import SearchBar from "./components/searchBar/SearchBar";
+//import ToolsBar from "./components/toolBar/ToolsBar";
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
 				<div>
-                    <ToolsBar/>
-					{/* <SearchBar/> */}
-					{/* <Switch>
-						<Route exact path="/" component={Home} />
-						<Route exact path="/other" component={Other} />
-					</Switch> */}
+                    {/* <ToolsBar/>
+					<SearchBar/> */}
+					<Switch>
+						<Route exact path="/" component={Login} />
+						<Route exact path="/home" component={Home} />
+					</Switch>
 				</div>
 			</BrowserRouter>
 		</>

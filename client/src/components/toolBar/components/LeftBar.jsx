@@ -1,15 +1,15 @@
 import React from "react";
-import { TextField, Button, InputAdornment, Typography } from "@mui/material";
+import { TextField, Button, InputAdornment, Typography, IconButton } from "@mui/material";
 import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import HelpIcon from '@mui/icons-material/Help';
 import LogoutIcon from '@mui/icons-material/Logout';
 import useStyles from "../styles";
-import logo from "../Images/icono_1.png";
+import logo from "../../../assets/Images/logo_1.png";
 import Avatar from '@mui/material/Avatar'
 
-const LeftBar = ({color}) => {
+const LeftBar = ({user}) => {
 
 	const classes = useStyles();
 
@@ -17,36 +17,37 @@ const LeftBar = ({color}) => {
 		<>
 			<div className={classes.toolBar}>
 
-				<img src={logo} alt='logo' className={classes.logoIcon}/>
+
 
 				<div className={classes.mainContainer}>
+                    <div className={classes.logoContainer}>
+                        <img src={logo} alt='logo' className={classes.logoIcon}/>
+                    </div>
 
 					<div className={classes.topText}>
-                        <Typography variant="body2" sx={{color: 'white', fontSize: '2em', textAlign: 'right'}}>Buen dia, Usuario</Typography>      
-						<Avatar sx={{ width: 46, height: 46, marginLeft: '10px' }}>OP</Avatar>             
-					</div>
+                        <div className={classes.textCenter}>
+                            <Typography className={classes.welcomeText} variant="h4">Buen día, {user}</Typography>      
+                        </div>
 
-					<Button variant="contained" size="large" sx={{textTransform: 'none', justifyContent:'left', fontSize: '20px', marginBottom: "25px", backgroundColor: "#242424"}} startIcon={<PersonIcon sx={{transform: 'scale(1.32)', marginLeft: '10px', marginRight: '45px'}}/>}>Mi perfil</Button>
-					<Button variant="contained" size="large" sx={{textTransform: 'none', justifyContent:'left', fontSize: '20px', marginBottom: "25px", backgroundColor: "#242424"}} startIcon={<NotificationsIcon sx={{transform: 'scale(1.32)', marginLeft: '10px', marginRight: '45px'}}/>}>Notificaciones</Button>
-					<Button variant="contained" size="large" sx={{textTransform: 'none', justifyContent:'left', fontSize: '20px', marginBottom: "25px", backgroundColor: "#242424"}} startIcon={<ChatBubbleIcon sx={{transform: 'scale(1.32)', marginLeft: '10px', marginRight: '45px'}}/>}>Mensajes</Button>
+                        <Avatar className={classes.avatar}>OP</Avatar>             
+
+					</div>
+                    <div className={classes.buttonsContainer}>
+                        <Button className={classes.buttonMiddle} variant="contained" size="large" startIcon={<PersonIcon sx={{transform: 'scale(1.32)', marginLeft: '10px', marginRight: '45px'}}/>}>Mi perfil</Button>
+                        <Button className={classes.buttonMiddle} variant="contained" size="large" startIcon={<NotificationsIcon sx={{transform: 'scale(1.32)', marginLeft: '10px', marginRight: '45px'}}/>}>Notificaciones</Button>
+                        <Button className={classes.buttonMiddle} variant="contained" size="large" startIcon={<ChatBubbleIcon sx={{transform: 'scale(1.32)', marginLeft: '10px', marginRight: '45px'}}/>}>Mensajes</Button>
+                    </div>
 
 				</div>
 
 				<div className={classes.bottomContainer}>
 
-					<Button
-						sx={{ transform: 'scale(1.32)', color: 'white' }}
-						variant="text"
-						startIcon={<HelpIcon />}
-					/>
-
-					<Button
-						sx={{ transform: 'scale(1.32)', color: 'white' }}
-						variant="text"
-						startIcon={<LogoutIcon />}
-					/>
-					
-
+					<IconButton>
+                        <HelpIcon fontSize="large" sx={{ color: 'white' }}/>
+                    </IconButton>
+                    <IconButton sx={{marginLeft: '50px'}}>
+                        <LogoutIcon fontSize="large" sx={{ color: 'white' }}/>
+                    </IconButton>
 				</div>
 			</div>
 		</>

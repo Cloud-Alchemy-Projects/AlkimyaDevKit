@@ -20,16 +20,16 @@ const TopBar = ({color}) => {
 				</div>
 				<div className={classes.leftContainer}>
 					<Button
-						sx={{ marginRight: "20px" }}
+                        className={classes.buttonTop}
 						variant="contained"
 						startIcon={<AddCircleOutline />}
 					>
 						New Project
 					</Button>
-					<TextField     
+					<TextField   
+                        className={classes.textField}
 						id="search-textfield"
                         size="small"
-                        color="primary"
 						placeholder="Search..."
 						InputProps={{
 							startAdornment: (
