@@ -1,8 +1,8 @@
 import { makeStyles } from "@mui/styles";
 
-import fondo from "../../assets/images/fondo_1.jpg";
+import fondo from "../../assets/images/fondo1.jpg";
 
-export default makeStyles((theme) => ({
+export default makeStyles(() => ({
 	loginPage: {
 		width: "100%",
 		height: "100vh",

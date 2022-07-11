@@ -26,7 +26,7 @@ const LeftBar = ({user}) => {
 
 					<div className={classes.topText}>
                         <div className={classes.textCenter}>
-                            <Typography className={classes.welcomeText} variant="h4">Buen dia, {user}</Typography>      
+                            <Typography className={classes.welcomeText} variant="h4">Buen día, {user}</Typography>      
                         </div>
 
                         <Avatar className={classes.avatar}>OP</Avatar>             
