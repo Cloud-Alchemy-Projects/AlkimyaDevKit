@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import Login from "./screens/login/Login";
 import Home from "./screens/home/Home";
-import Other from "./screens/other/Other";
 //import SearchBar from "./components/searchBar/SearchBar";
 //import ToolsBar from "./components/toolBar/ToolsBar";
 
@@ -13,8 +13,8 @@ function App() {
                     {/* <ToolsBar/>
 					<SearchBar/> */}
 					<Switch>
-						<Route exact path="/" component={Home} />
-						<Route exact path="/other" component={Other} />
+						<Route exact path="/" component={Login} />
+						<Route exact path="/home" component={Home} />
 					</Switch>
 				</div>
 			</BrowserRouter>
