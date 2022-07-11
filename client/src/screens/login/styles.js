@@ -43,7 +43,6 @@ export default makeStyles(() => ({
 		marginTop: "5px",
 		marginLeft: "-10px",
 		background: "white",
-		borderRadius: "10px",
 		width: "325px",
 		borderRadius: "10px",
 		fontSize: "20px",
