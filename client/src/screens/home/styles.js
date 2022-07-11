@@ -1,5 +1,5 @@
 import {makeStyles} from "@mui/styles"
-import fondo from "../../assets/images/background-home.jpg"
+import fondo from "../../assets/Images/background-home.jpg"
 
 export default makeStyles(() => ({
     mainContainer: {

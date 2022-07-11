@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-import fondo from "../../assets/images/fondo1.jpg";
+import fondo from "../../assets/Images/fondo1.jpg";
 
 export default makeStyles(() => ({
 	loginPage: {

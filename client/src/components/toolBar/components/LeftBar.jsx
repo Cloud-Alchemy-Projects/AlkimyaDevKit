@@ -6,7 +6,7 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import HelpIcon from '@mui/icons-material/Help';
 import LogoutIcon from '@mui/icons-material/Logout';
 import useStyles from "../styles";
-import logo from "../../../assets/images/logo_1.png";
+import logo from "../../../assets/Images/logo_1.png";
 import Avatar from '@mui/material/Avatar'
 
 const LeftBar = ({user}) => {

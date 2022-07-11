@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import useStyles from "../styles";
 import {Typography, TextField, Button} from '@mui/material';
-import logo from "../../../assets/images/logo_1.png";
+import logo from "../../../assets/Images/logo_1.png";
 
 const LoginForm = () => {
 
