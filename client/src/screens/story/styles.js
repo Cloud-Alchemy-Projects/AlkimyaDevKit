@@ -6,20 +6,19 @@ export default makeStyles(() => ({
         height: "100vh",
         backgroundColor: "white"
     },
-    projectsContainer: { //Contenedor general para la vista projects
+    projectsContainer: { //Contenedor general para la vista stories
         width: '100%',
         height: '100%',
         paddingLeft: '310px'
     },
-    typoContainer:{ //Contenedor para el texto New Project
+    typoContainer:{ //Contenedor para el texto New User Story
         width: '40%',
-        height: '100%',
+        height: '20%',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'top',
-        paddingTop: '200px',
-        marginBottom: '-670px',
-        marginLeft: '30px'
+        justifyContent: 'left',
+        alignItems: 'center',
+        paddingTop: '18%',
+        paddingBottom: '5%'
     },
     projectsTypo: {
         color: '#97004D',
@@ -27,10 +26,10 @@ export default makeStyles(() => ({
         fontSize: '40px !important'
     },
     formsContainer: { //Contenedor para los campos de texto
-        width: '85%',
+        width: '75%',
         height: '60%',
         paddingLeft: '200px',
-        paddingTop: '-10px',
+        paddingTop: '3%',
         display: "flex",
 		flexDirection: "column"
     },
@@ -42,19 +41,19 @@ export default makeStyles(() => ({
     },
     textField: {
 		marginTop: "15px !important",
-		width: "395px",
+		width: "100%",
 		height: "55px",
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
             borderRadius: 20,
-          },
+        },
 	},
     textField_Epic: {
 		marginTop: "15px !important",
-		width: "990px",
+		width: "100%",
 		height: "55px",
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
             borderRadius: 20,
-          },
+        },
 	}
     
 }));
