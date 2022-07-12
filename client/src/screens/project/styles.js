@@ -13,12 +13,12 @@ export default makeStyles(() => ({
     },
     typoContainer:{ //Contenedor para el texto New Project
         width: '40%',
-        height: '100%',
+        height: '20%',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'top',
-        paddingTop: '210px',
-        marginBottom: '-650px'
+        justifyContent: 'left',
+        alignItems: 'center',
+        paddingTop: '22%',
+        marginBottom: '8%'
     },
     projectsTypo: {
         color: '#97004D',

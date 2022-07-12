@@ -16,14 +16,14 @@ const Projects = () => {
             <SearchBar color="black"/>
 
             <div className={classes.projectsContainer}>
+                
+                <div className={classes.formsContainer}>
 
                 <div className={classes.typoContainer}>
                     <Typography className={classes.projectsTypo} variant="h2">New Project</Typography>
                 </div>
-                
-                <div className={classes.formsContainer}>
 
-                    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid container rowSpacing={1} columnSpacing={{ xs: 10, sm: 2, md: 3 }}>
 
                         <Grid item xs={6}>
                             <Typography align="left" variant="h3" className={classes.formsTypo}>Project Name</Typography>
