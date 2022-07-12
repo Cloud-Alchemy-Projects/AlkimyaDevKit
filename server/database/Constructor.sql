@@ -74,8 +74,8 @@ CREATE TABLE proyectos
 CREATE TABLE epic
 (
     IdEpic           INT auto_increment,
-    nombreEpic       VARCHAR(30),
-    descripcion      VARCHAR(50),
+    nombreEpic       VARCHAR(100),
+    descripcion      VARCHAR(200),
 
     PRIMARY KEY (IdEpic )
 );
@@ -83,8 +83,8 @@ CREATE TABLE epic
 CREATE TABLE rol
 (
     IdRol            INT auto_increment,
-    nombreRol        VARCHAR(30),
-    descripcion      VARCHAR(50),
+    nombreRol        VARCHAR(100),
+    descripcion      VARCHAR(200),
     actores          INT,
 
     PRIMARY KEY (IdRol)
@@ -94,10 +94,10 @@ CREATE TABLE rol
 CREATE TABLE UserStories
 (
     IdUserStory       INT auto_increment,
-    quiero            VARCHAR(20),
-    pueda             VARCHAR(20),
-    story             VARCHAR(60),
-    notaGral          VARCHAR(60),
+    quiero            VARCHAR(100),
+    pueda             VARCHAR(100),
+    story             VARCHAR(300),
+    notaGral          VARCHAR(100),
     epic              INT,
     rol               INT,
     rolSecundario            INT,
