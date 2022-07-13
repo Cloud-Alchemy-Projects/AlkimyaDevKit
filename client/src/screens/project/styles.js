@@ -4,16 +4,16 @@ export default makeStyles(() => ({
     mainContainer: { //Contenedor general que contiene los demas componentes (SearchBar y ToolsBar)
         width: "100%",
         height: "100vh",
-        backgroundColor: "white"
+        backgroundColor: "white",
+        paddingLeft: '310px'
     },
     projectsContainer: { //Contenedor general para la vista projects
         width: '100%',
         height: '100%',
-        paddingLeft: '310px'
     },
     typoContainer:{ //Contenedor para el texto New Project
-        width: '40%',
-        height: '20%',
+        width: '100%',
+        height: '30%',
         display: 'flex',
         justifyContent: 'left',
         alignItems: 'center',
@@ -41,7 +41,7 @@ export default makeStyles(() => ({
     },
     textField: {
 		marginTop: "15px !important",
-		width: "395px",
+		width: "100%",
 		height: "55px",
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
             borderRadius: 20,
