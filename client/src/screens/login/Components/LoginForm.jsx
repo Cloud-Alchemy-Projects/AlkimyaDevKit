@@ -37,7 +37,7 @@ const LoginForm = () => {
                         <Typography align="left" variant="body2" type="search" sx={{color: 'white', fontSize: '1.2em', marginTop: '40px'}}>Password</Typography>
                         <TextField hiddenLabel className={classes.textField} variant="filled" type="password" InputProps={{ disableUnderline: true}} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
 
-                        <Button type="submit" variant="contained" size="large" style={{background: 'black', border: 'none', borderRadius: '10px', color: '#fff'}} sx={{marginTop: '40px', marginLeft:'190px', width: '125px'}}>LOG IN</Button>
+                        <Button type="submit" variant="contained" size="large" style={{background: 'black', border: 'none', borderRadius: '10px', color: '#fff'}} sx={{marginTop: '40px', marginLeft:'200px', width: '125px'}}>LOG IN</Button>
                     </form>
 
                 </div>
