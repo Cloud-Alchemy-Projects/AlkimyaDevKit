@@ -4,6 +4,7 @@ import usersRoutes from './routes/users.js'
 import projectsRoutes from './routes/projects.js'
 import cors from "cors";
 import {validation} from "./middleware/validateToken.js";
+import userstoriesRoutes from "./routes/userstories.js"
 const app = express();
 
 app.use(bodyParser.json({ limit: "300mb", extended: true }));
@@ -12,6 +13,7 @@ app.use(cors());
 
 app.use('/users', usersRoutes)
 app.use('/projects', validation, projectsRoutes)
+app.use('/userstories', validation, userstoriesRoutes)
 // Server configuration
 const PORT = process.env.PORT || 1010;
 
