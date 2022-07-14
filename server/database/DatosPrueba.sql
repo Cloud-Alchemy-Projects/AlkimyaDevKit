@@ -1,4 +1,4 @@
--- Active: 1656814242853@@localhost@3308@alkimyaDevKit
+-- Active: 1656693754180@@localhost@3308@alkimyaDevKit
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Architect');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Scientist');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Process Designer');
@@ -25,6 +25,7 @@ INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,C
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (952,'Guillermo','Peña','López','TSystems',9);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (100,'Víctor','Rodríguez','Moreno','TSystems',8);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (400,'Santiago','Pineda','Morales','TSystems',4);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (0,'Develop','Develop','Develop','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',10);
 
 
 INSERT INTO companias (nombreCompania) VALUES ('T-Systems');
