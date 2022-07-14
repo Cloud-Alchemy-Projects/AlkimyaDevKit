@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import useStyles from "../styles";
 import {Typography, TextField, Button} from '@mui/material';
 import logo from "../../../assets/Images/logo_1.png";
+import {signin} from "../../../actions/auth";
 
 const LoginForm = () => {
 
     const classes = useStyles();
-
+    const dispatch = useDispatch();
     const [user, setUser] = useState({ id: '', password: '' });
     const history = useHistory();
     const onSubmit = (event) => {
         event.preventDefault();
-        console.log(user)
-        history.push("/home")
+        dispatch(signin(user, history))
     }
 
     return(

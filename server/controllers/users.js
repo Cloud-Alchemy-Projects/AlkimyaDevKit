@@ -18,8 +18,8 @@ export const newUser = async(req, res) =>{
 };
 export const logUser = async(req, res) =>{
     try {
-        const numUser = req.body.NumUsuario
-        const contrUser = req.body.Contrasena
+        const numUser = req.body.id
+        const contrUser = req.body.password
         const user = await db.query(
             'SELECT Contrasena FROM usuarios WHERE NumUsuario=?', [numUser]
             );

@@ -1,5 +1,6 @@
 import React from "react";
 import { TextField, Button, InputAdornment, Typography, IconButton } from "@mui/material";
+import {useHistory} from "react-router-dom";
 import PersonIcon from '@mui/icons-material/Person';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
@@ -12,7 +13,11 @@ import Avatar from '@mui/material/Avatar'
 const LeftBar = ({user}) => {
 
 	const classes = useStyles();
-
+    const history = useHistory();
+    const logout = () => {
+        localStorage.removeItem('auth-token'); 
+        history.push("/")
+    }
 	return (
 		<>
 			<div className={classes.toolBar}>
@@ -45,7 +50,7 @@ const LeftBar = ({user}) => {
 					<IconButton>
                         <HelpIcon fontSize="large" sx={{ color: 'white' }}/>
                     </IconButton>
-                    <IconButton sx={{marginLeft: '50px'}}>
+                    <IconButton sx={{marginLeft: '50px'}} onClick={logout}>
                         <LogoutIcon fontSize="large" sx={{ color: 'white' }}/>
                     </IconButton>
 				</div>
