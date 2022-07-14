@@ -5,10 +5,11 @@ import theme from "./assets/theme"
 import { ThemeProvider } from '@mui/material/styles';
 import {Provider} from "react-redux"
 import {createStore, applyMiddleware, compose} from "redux"
+import { composeWithDevTools } from '@redux-devtools/extension';
 import thunk from "redux-thunk"
 import reducers from "./reducers"
 import './index.css';
-const store = createStore(reducers, compose(applyMiddleware(thunk)))
+const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)))
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>
