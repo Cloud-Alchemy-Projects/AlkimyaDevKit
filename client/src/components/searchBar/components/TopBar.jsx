@@ -1,10 +1,12 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 import { TextField, Button, InputAdornment, Typography } from "@mui/material";
 import useStyles from "../styles";
 import { AddCircleOutline, Search } from "@mui/icons-material";
 
 const TopBar = ({color}) => {
 	const classes = useStyles();
+    const history = useHistory();
 
 	return (
 		<>
@@ -23,6 +25,9 @@ const TopBar = ({color}) => {
                         className={classes.buttonTop}
 						variant="contained"
 						startIcon={<AddCircleOutline />}
+                        onClick={() => {
+                            history.push("/projects")
+                        }}
 					>
 						New Project
 					</Button>
