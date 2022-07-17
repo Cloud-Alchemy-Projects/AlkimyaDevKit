@@ -1,8 +1,9 @@
 import express from "express";
-import {sendProjects} from "../controllers/projects.js"
+import {sendProjects, newProject} from "../controllers/projects.js";
 
 const router = express.Router()
 
-router.get("/", sendProjects)
+router.get("/all", sendProjects)
+router.post("/new", newProject)
 
 export default router;

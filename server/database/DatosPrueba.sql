@@ -1,4 +1,4 @@
--- Active: 1656693754180@@localhost@3308@alkimyaDevKit
+-- Active: 1656814242853@@localhost@3308@alkimyaDevKit
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Architect');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Scientist');
 INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Process Designer');
