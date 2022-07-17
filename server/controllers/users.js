@@ -16,6 +16,7 @@ export const newUser = async(req, res) =>{
         console.log(error.message)
     }
 };
+
 export const logUser = async(req, res) =>{
     try {
         const numUser = req.body.id
