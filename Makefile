@@ -2,7 +2,7 @@
 
 .PHONY: help
 help: 
-	@echo "Commands for use: \n -- make up \n -- make down \n -- make logs-server \n -- make logs-client \n -- make logs-mysql"
+	@echo "Commands for use: \n -- make up \n -- make down \n -- make logs-server \n -- make logs-client \n -- make logs-mysql \n -- make restart-server"
 
 .PHONY: up
 up: 
