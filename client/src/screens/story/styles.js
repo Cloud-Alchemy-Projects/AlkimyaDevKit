@@ -29,7 +29,7 @@ export default makeStyles(() => ({
 		paddingBottom: '25px'
     },
     formsContainer_2: { //Contenedor para los campos de texto
-        width: "50vw",
+        width: "65vw",
         height: 'auto',
 		paddingBottom: '25px'
     },

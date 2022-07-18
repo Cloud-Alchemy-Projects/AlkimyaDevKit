@@ -30,9 +30,9 @@ const AllStories = () => {
 
             <div className={classes.formsContainer_2}>
 
-                    <Grid container justifyContent="center" rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                    <Grid container justifyContent="space-around" rowSpacing={1} columnSpacing={{ xs: 12, sm: 2, md: 3 }}>
         
-                        <Grid item xs={3} className={classes.paperContainer}>
+                        <Grid item xs={2.5} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
 					            Backlog
@@ -58,7 +58,7 @@ const AllStories = () => {
 
                         </Grid>
 
-                        <Grid item xs={3} className={classes.paperContainer}>
+                        <Grid item xs={2.5} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
 					            On Deck
@@ -90,7 +90,7 @@ const AllStories = () => {
 
                         </Grid>
 
-                        <Grid item xs={3} className={classes.paperContainer}>
+                        <Grid item xs={2.5} className={classes.paperContainer}>
                             
                             <Typography className={classes.paperTypo} variant="body">
 					            Active
@@ -112,7 +112,7 @@ const AllStories = () => {
 
 
                          {/* ULTIMA COLUMNA QUE CONTIENE SOLO UN PAPER */}
-                         <Grid item xs={3} className={classes.paperContainer}>
+                         <Grid item xs={2.5} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
 					            Complete
