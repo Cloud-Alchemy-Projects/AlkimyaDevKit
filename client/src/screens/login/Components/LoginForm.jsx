@@ -1,51 +1,145 @@
-import React, { useState } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from "react";
+import { useHistory, useLocation } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import useStyles from "../styles";
-import {Typography, TextField, Button} from '@mui/material';
+import { Typography, TextField, Button } from "@mui/material";
 import logo from "../../../assets/Images/logo_1.png";
-import {signin} from "../../../actions/auth";
+import { signin } from "../../../actions/auth";
 
 const LoginForm = () => {
+	const classes = useStyles();
+	const dispatch = useDispatch();
+	const [user, setUser] = useState({ id: "", password: "" });
+	const history = useHistory();
+	const onSubmit = (event) => {
+		event.preventDefault();
+		dispatch(signin(user, history));
+	};
 
-    const classes = useStyles();
-    const dispatch = useDispatch();
-    const [user, setUser] = useState({ id: '', password: '' });
-    const history = useHistory();
-    const onSubmit = (event) => {
-        event.preventDefault();
-        dispatch(signin(user, history))
-    }
+	return (
+		<>
+			<div className={classes.loginPage}>
+				<div className={classes.imageContainer}>
+					<img src={logo} alt="logo" className={classes.logoIcon} />
+				</div>
+				<div className={classes.contentWrapper}>
+					<div className={classes.textContainer}>
+						<Typography className={classes.timeText} variant="h1">
+							Timeless Innovation
+						</Typography>
+					</div>
+					<div className={classes.signinForm}>
+						<div className={classes.mainContainer}>
+							<div className={classes.titleInForm}>
+								<Typography
+									className={classes.textInForm}
+									align="center"
+									variant="h3"
+								>
+									Alkimya DevKit
+								</Typography>
+								<Typography
+									align="right"
+									variant="body2"
+									sx={{
+										color: "white",
+										// fontSize: "1.1em",
+									}}
+								>
+									by Cloud Alchemy
+								</Typography>
+							</div>
 
-    return(
-        <>
-            <div className={classes.loginPage}>
-                
-                <img src={logo} alt='logo' className={classes.logoIcon}/>
+							<form
+								className={classes.formContainer}
+								onSubmit={onSubmit}
+							>
+								<Typography
+									align="left"
+									variant="button"
+									sx={{
+										color: "white",
+										// fontSize: "1.2em",
+										fontFamily: "var(--font-secondary-medium)",
+									}}
+								>
+									ID
+								</Typography>
+								<TextField
+                                    size="small"
+									hiddenLabel
+									className={classes.textField}
+									variant="filled"
+                                    InputProps={{
+                                        disableUnderline: true,
+                                        spellCheck: "false",
+                                        style: {fontFamily: 'var(--font-secondary-medium)'}
+								    }}
+									onChange={(e) =>
+										setUser({ ...user, id: e.target.value })
+									}
+								/>
 
-                <Typography variant="body2" sx={{color: 'white', fontSize: '6em', fontWeight: '600', textAlign: 'left', paddingLeft: '220px', marginTop: '-490px'}}>Timeless</Typography> 
-                <Typography variant="body2" sx={{color: 'white', fontSize: '6em', fontWeight: '600', textAlign: 'left', paddingLeft: '235px', marginTop: '-20px'}}>Innovation</Typography>
-
-                <div className={classes.mainContainer}>
-                    
-                    <Typography className={classes.textInForm} align="center" variant="body2">Alkimya DevKit</Typography> 
-                    <Typography align="right" variant="body2" sx={{color: 'white', fontSize: '1.1em', paddingRight: '25px'}}>by Cloud Alchemy</Typography> 
-
-                    <form className={classes.formContainer} onSubmit={onSubmit}>
-                        <Typography align="left" variant="body2" sx={{color: 'white', fontSize: '1.2em'}}>ID</Typography>
-                        <TextField hiddenLabel className={classes.textField} variant="filled" InputProps={{ disableUnderline: true, spellCheck: 'false'}} onChange={(e) => setUser({ ...user, id: e.target.value })}/>
-
-                        <Typography align="left" variant="body2" type="search" sx={{color: 'white', fontSize: '1.2em', marginTop: '40px'}}>Password</Typography>
-                        <TextField hiddenLabel className={classes.textField} variant="filled" type="password" InputProps={{ disableUnderline: true}} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
-
-                        <Button type="submit" variant="contained" size="large" style={{background: 'black', border: 'none', borderRadius: '10px', color: '#fff'}} sx={{marginTop: '40px', marginLeft:'200px', width: '125px'}}>LOG IN</Button>
-                    </form>
-
-                </div>
-
-            </div>
-        </>
-      );
+								<Typography
+									align="left"
+									variant="button"
+									type="search"
+									sx={{
+										color: "white",
+									    textTransform: "none",
+										marginTop: "40px",
+										fontFamily:
+											"var(--font-secondary-medium)",
+									}}
+								>
+									Password
+								</Typography>
+								<TextField
+                                    size="small"
+									hiddenLabel
+									className={classes.textField}
+									variant="filled"
+									type="password"
+									InputProps={{
+                                        disableUnderline: true,
+                                        spellCheck: "false",
+                                        style: {fontFamily: 'var(--font-secondary-medium)'}
+								    }}
+									onChange={(e) =>
+										setUser({
+											...user,
+											password: e.target.value,
+										})
+									}
+								/>
+                                <div className={classes.buttonContainer}>
+                                    <Button
+                                        type="submit"
+                                        variant="contained"
+                                        size="large"
+                                        style={{
+                                            background: "black",
+                                            border: "none",
+                                            borderRadius: "10px",
+                                            color: "#fff",
+                                        }}
+                                        sx={{
+                                            marginTop: "40px",
+                                            // marginLeft: "200px",
+                                            width: "125px",
+                                            fontFamily: "var(--font-secondary-bold)"
+                                        }}
+                                    >
+                                        LOG IN
+                                    </Button>
+                                </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	);
 };
 
 export default LoginForm;

@@ -32,3 +32,31 @@ code {
   width: 100%;
   height: 100%;
 } */
+@font-face {
+    font-family: "TeleNeo Thin";
+    src: url(./assets/fonts/TeleNeoThin.otf);
+}
+@font-face {
+    font-family: "TeleNeo Regular";
+    src: url(./assets/fonts/TeleNeo.otf);
+}
+@font-face {
+    font-family: "TeleNeo Medium";
+    src: url(./assets/fonts/TeleNeoMedium.otf);
+}
+@font-face {
+    font-family: "TeleNeo Bold";
+    src: url(./assets/fonts/TeleNeoBold.otf);
+}
+
+:root{
+    --font-primary: 'Poppins';
+    --font-secondary-thin: 'TeleNeo Thin';
+    --font-secondary-regular: 'TeleNeo Regular';
+    --font-secondary-medium: 'TeleNeo Medium';
+    --font-secondary-bold: 'TeleNeo Bold';
+}
+
+body {
+    font-family: var(--font-primary), var(--font-secondary-regular) !important
+}
