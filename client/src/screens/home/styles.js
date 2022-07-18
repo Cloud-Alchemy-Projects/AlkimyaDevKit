@@ -13,7 +13,7 @@ export default makeStyles(() => ({
     homeContainer: {
         width: '100%',
         height: '100%',
-        paddingLeft: '500px'
+        paddingLeft: '400px'
     },
     typoContainer:{
         width: '40%',
@@ -25,6 +25,6 @@ export default makeStyles(() => ({
     homeTypo: {
         color: 'white',
         fontWeight: '600 !important',
-        fontSize: '80px !important'
+        // fontSize: '80px !important'
     }
 }));
