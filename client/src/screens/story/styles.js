@@ -7,11 +7,6 @@ export default makeStyles(() => ({
         backgroundColor: "white",
         paddingLeft: "400px"
     },
-    projectsContainer: { //Contenedor general para la vista stories
-        width: '100%',
-        height: '100%',
-        paddingLeft: '310px'
-    },
     typoContainer:{ //Contenedor para el texto New User Story
         width: "100%",
 		display: "flex",
@@ -24,8 +19,17 @@ export default makeStyles(() => ({
         color: "#97004D",
 		fontWeight: "700 !important",
     },
+    paperTypo: {
+        color: "#242424",
+		fontWeight: "600 !important"
+    },
     formsContainer: { //Contenedor para los campos de texto
         width: "45vw",
+        height: 'auto',
+		paddingBottom: '25px'
+    },
+    formsContainer_2: { //Contenedor para los campos de texto
+        width: "50vw",
         height: 'auto',
 		paddingBottom: '25px'
     },
@@ -75,6 +79,18 @@ export default makeStyles(() => ({
         padding: '10px 40px !important',
         borderRadius: "10px !important",
         fontFamily: 'var(--font-secondary-bold) !important'
+    },
+    paperColor:{
+        backgroundColor: '#E20074 !important',
+        opacity: '20%'
+    },
+    paperColor_2:{
+        backgroundColor: '#E20074 !important',
+        opacity: '50%'
+    },
+    paperContainer:{
+        backgroundColor: '#E6E6E6',
+        borderRadius: '10px'
     }
     
 }));
