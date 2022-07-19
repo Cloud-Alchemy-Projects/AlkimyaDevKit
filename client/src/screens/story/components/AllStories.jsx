@@ -32,9 +32,9 @@ const AllStories = () => {
 
             <div className={classes.formsContainer_2}>
 
-                    <Grid container justifyContent="space-around" rowSpacing={1} columnSpacing={{ xs: 12, sm: 2, md: 3 }}>
+                    <Grid container justifyContent='space-around' rowSpacing={1} columnSpacing={{ xs: 4, sm: 2, md: 3 }}>
         
-                        <Grid item xs={2.5} className={classes.paperContainer}>
+                        <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
 					            Backlog
@@ -48,25 +48,25 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 1 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <IconButton size="small">
-                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
-                            </IconButton>
+                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                                New Card
+                            </Button>
 
                         </Grid>
 
-                        <Grid item xs={2.5} className={classes.paperContainer}>
+                        <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
 					            On Deck
@@ -80,32 +80,32 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
                                 <Paper elevation={2} className={classes.paperColor_2}/>
                             </Box>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 1 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <IconButton size="small">
-                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
-                            </IconButton>
+                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                                New Card
+                            </Button>
 
                         </Grid>
 
-                        <Grid item xs={2.5} className={classes.paperContainer}>
+                        <Grid item xs={2} md={2} className={classes.paperContainer}>
                             
                             <Typography className={classes.paperTypo} variant="body">
-					            Active
+					            Active           
 				            </Typography>
 
                             <IconButton size="small">
@@ -116,23 +116,23 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 1 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <IconButton size="small">
-                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
-                            </IconButton>
+                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                                New Card
+                            </Button>
 
                         </Grid>
 
 
                          {/* ULTIMA COLUMNA QUE CONTIENE SOLO UN PAPER */}
-                         <Grid item xs={2.5} className={classes.paperContainer}>
+                         <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
 					            Complete
@@ -146,13 +146,13 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
                             
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": {width: 160, height: 110, marginBottom: 1 } }}>
                                 <Paper elevation={2} className={classes.paperColor}/>
                             </Box>
 
-                            <IconButton size="small">
-                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
-                            </IconButton>
+                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                                New Card
+                            </Button>
 
                         </Grid>
 

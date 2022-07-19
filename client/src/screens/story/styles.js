@@ -21,7 +21,8 @@ export default makeStyles(() => ({
     },
     paperTypo: {
         color: "#242424",
-		fontWeight: "600 !important"
+		fontWeight: "600 !important",
+        marginRight: '45px !important'
     },
     formsContainer: { //Contenedor para los campos de texto
         width: "45vw",
