@@ -89,8 +89,9 @@ export default makeStyles(() => ({
         opacity: '50%'
     },
     paperContainer:{
-        backgroundColor: '#E6E6E6',
-        borderRadius: '10px'
+        backgroundColor: '#E6E6E6 !important',
+        borderRadius: '10px !important',
+        height: "100%"
     }
     
 }));

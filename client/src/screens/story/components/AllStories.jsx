@@ -1,5 +1,7 @@
 import React from 'react';
-import { Typography, TextField, Button, Grid, Select, MenuItem, FormControl, Box, Paper, Tooltip} from "@mui/material";
+import { Typography, Button, Grid, Box, Paper, IconButton} from "@mui/material";
+import AddIcon from '@mui/icons-material/Add';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useHistory } from 'react-router-dom';
 import useStyle from "../styles";
 
@@ -38,23 +40,29 @@ const AllStories = () => {
 					            Backlog
 				            </Typography>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <IconButton size="small">
+                                <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
                         </Grid>
 
@@ -64,29 +72,33 @@ const AllStories = () => {
 					            On Deck
 				            </Typography>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor_2}/>
-                                </Box>
-                            </Tooltip>
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <IconButton size="small">
+                                <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor_2}/>
+                            </Box>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
                         </Grid>
 
@@ -96,17 +108,25 @@ const AllStories = () => {
 					            Active
 				            </Typography>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <IconButton size="small">
+                                <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
+
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
                         </Grid>
 
@@ -117,12 +137,22 @@ const AllStories = () => {
                             <Typography className={classes.paperTypo} variant="body">
 					            Complete
 				            </Typography>
+
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
+
+                            <IconButton size="small">
+                                <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
                             
-                            <Tooltip title="Add" placement="left-start">
-                                <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 1, width: 180, height: 120 } }}>
-                                    <Paper elevation={2} className={classes.paperColor}/>
-                                </Box>
-                            </Tooltip>
+                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { m: 2, width: 180, height: 120 } }}>
+                                <Paper elevation={2} className={classes.paperColor}/>
+                            </Box>
+
+                            <IconButton size="small">
+                                <AddIcon fontSize="inherit" sx={{ color: '#959595' }}/>
+                            </IconButton>
 
                         </Grid>
 
