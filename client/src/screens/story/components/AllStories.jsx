@@ -34,7 +34,7 @@ const AllStories = () => {
 
                     <Grid container rowSpacing={1} columnSpacing={{ sm: 2, md: 3 }}>
         
-                        {/* PRIMERA COLUMNA QUE CONTIENE 3 PAPERS */}
+                        {/* PRIMERA COLUMNA QUE CONTIENE 3 */}
                         <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
@@ -49,17 +49,9 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
-
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
-
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 1 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }} />
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
                             <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
@@ -67,7 +59,7 @@ const AllStories = () => {
 
                         </Grid>
 
-                        {/* SEGUNDA COLUMNA QUE CONTIENE 4 PAPERS */}
+                        {/* SEGUNDA COLUMNA QUE CONTIENE 4 */}
                         <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
@@ -82,21 +74,10 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
-                                <Paper elevation={2} className={classes.paperColor_2}/>
-                            </Box>
-
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
-
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
-
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 1 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
+                            <Box className={classes.boxContainer} sx={{ opacity: '50%' }}/>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
                             <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
@@ -104,7 +85,7 @@ const AllStories = () => {
 
                         </Grid>
 
-                        {/* TERCERA COLUMNA QUE CONTIENE 2 PAPERS */}
+                        {/* TERCERA COLUMNA QUE CONTIENE 2 */}
                         <Grid item xs={2} md={2} className={classes.paperContainer}>
                             
                             <Typography className={classes.paperTypo} variant="body"> 
@@ -119,13 +100,9 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 2 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": { width: 160, height: 110, marginBottom: 1 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
                             <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
@@ -134,7 +111,7 @@ const AllStories = () => {
                         </Grid>
 
 
-                         {/* ULTIMA COLUMNA QUE CONTIENE 1 PAPER */}
+                         {/* ULTIMA COLUMNA QUE CONTIENE 1 */}
                          <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
@@ -149,9 +126,7 @@ const AllStories = () => {
                                 <MoreVertIcon fontSize="inherit" sx={{ color: '#959595' }}/>
                             </IconButton>
                             
-                            <Box sx={{ display: "flex", flexWrap: "wrap", "& > :not(style)": {width: 160, height: 110, marginBottom: 1 } }}>
-                                <Paper elevation={2} className={classes.paperColor}/>
-                            </Box>
+                            <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
                             <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
