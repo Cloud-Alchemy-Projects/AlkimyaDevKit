@@ -32,8 +32,9 @@ const AllStories = () => {
 
             <div className={classes.formsContainer_2}>
 
-                    <Grid container justifyContent='space-around' rowSpacing={1} columnSpacing={{ xs: 4, sm: 2, md: 3 }}>
+                    <Grid container rowSpacing={1} columnSpacing={{ sm: 2, md: 3 }}>
         
+                        {/* PRIMERA COLUMNA QUE CONTIENE 3 PAPERS */}
                         <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
@@ -66,6 +67,7 @@ const AllStories = () => {
 
                         </Grid>
 
+                        {/* SEGUNDA COLUMNA QUE CONTIENE 4 PAPERS */}
                         <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">
@@ -102,9 +104,10 @@ const AllStories = () => {
 
                         </Grid>
 
+                        {/* TERCERA COLUMNA QUE CONTIENE 2 PAPERS */}
                         <Grid item xs={2} md={2} className={classes.paperContainer}>
                             
-                            <Typography className={classes.paperTypo} variant="body">
+                            <Typography className={classes.paperTypo} variant="body"> 
 					            Active           
 				            </Typography>
 
@@ -131,7 +134,7 @@ const AllStories = () => {
                         </Grid>
 
 
-                         {/* ULTIMA COLUMNA QUE CONTIENE SOLO UN PAPER */}
+                         {/* ULTIMA COLUMNA QUE CONTIENE 1 PAPER */}
                          <Grid item xs={2} md={2} className={classes.paperContainer}>
 
                             <Typography className={classes.paperTypo} variant="body">

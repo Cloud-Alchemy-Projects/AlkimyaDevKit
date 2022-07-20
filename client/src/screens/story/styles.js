@@ -92,7 +92,8 @@ export default makeStyles(() => ({
     paperContainer:{
         backgroundColor: '#E6E6E6 !important',
         borderRadius: '10px !important',
-        height: "100%"
+        height: "100%",
+        marginLeft: "25px !important"
     }
     
 }));
