@@ -1,4 +1,4 @@
--- Active: 1656814242853@@localhost@3308@alkimyaDevKit
+-- Active: 1656693754180@@localhost@3308
 DROP DATABASE IF EXISTS alkimyaDevKit;
 CREATE DATABASE alkimyaDevKit
 CHARACTER SET utf8
@@ -76,7 +76,9 @@ CREATE TABLE epic
     IdEpic           INT auto_increment,
     nombreEpic       VARCHAR(100),
     descripcion      VARCHAR(200),
+    idProyecto        INT,
 
+    FOREIGN KEY (idProyecto) REFERENCES proyectos (IdProyecto),
     PRIMARY KEY (IdEpic )
 );
 
@@ -86,7 +88,9 @@ CREATE TABLE rol
     nombreRol        VARCHAR(100),
     descripcion      VARCHAR(200),
     actores          INT,
+    idProyecto        INT,
 
+    FOREIGN KEY (idProyecto) REFERENCES proyectos (IdProyecto),
     PRIMARY KEY (IdRol)
 );
 
