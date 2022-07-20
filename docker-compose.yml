@@ -1,7 +1,6 @@
 version: '3'
 services:
   client:
-    container_name: DevKit-Front
     stdin_open: true
     tty: true
     build: ./client
@@ -12,23 +11,18 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
   server:
-    container_name: DevKit-Back
-    stdin_open: true
-    tty: true
-    command: npm start
     depends_on:
       - mysql
     build: ./server
     ports: 
       - "1010:1010"
     volumes:
-      - ./server:/app
+      - ./server:/app/src
     environment:
       - CHOKIDAR_USEPOLLING=true
     env_file:
       - ./server/.env
   mysql:
-    container_name: DevKit-DB
     image: mysql:8
     platform: linux/amd64
     volumes:
