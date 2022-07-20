@@ -21,3 +21,21 @@ export const newUserStory = async(req, res) =>{
         console.log(error.message)
     }
 };
+
+export const getRols = async(req, res) =>{
+    try {
+        const [rows, fields] = await db.query('SELECT * FROM rol');
+        res.status(200).json(rows);
+    } catch (error) {
+        res.status(404).json({message: error.message})
+    }
+};
+
+export const getEpics = async(req, res) =>{
+    try {
+        const [rows, fields] = await db.query('SELECT * FROM epic');
+        res.status(200).json(rows);
+    } catch (error) {
+        res.status(404).json({message: error.message})
+    }
+};
