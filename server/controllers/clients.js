@@ -13,6 +13,20 @@ export const getAllClients = async (req, res) => {
 	}
 };
 
+export const getClientName = async (req, res) => {
+	try {
+		const [rows, fields] = await db.query(
+			"SELECT clientes.idCliente, clientes.NombreCliente, clientes.ApellidoPaterno, \
+            clientes.ApellidoMaterno, clientes.telefono, clientes.correo, companias.nombreCompania \
+            FROM clientes INNER JOIN companias ON companias.IdCompania=clientes.Compania\
+            WHERE clientes.NombreCliente=(?);", [req.body.NombreCliente]
+		);
+		res.status(200).json(rows);
+	} catch (error) {
+		res.status(404).json({ message: error.message });
+	}
+};
+
 export const postNewClient = async (req, res) => {
 	try {
 		await db.query(

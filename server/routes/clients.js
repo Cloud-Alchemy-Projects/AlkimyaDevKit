@@ -1,10 +1,16 @@
 import express from "express";
-import {getAllClients, getAllCompanies, postNewClient} from "../controllers/clients.js"
+import {getAllClients, getAllCompanies, postNewClient, getClientName} from "../controllers/clients.js"
 
 const router = express.Router()
 
+// Generals
 router.get("/all", getAllClients)
-router.get("/companies", getAllCompanies)
 router.post("/new", postNewClient)
+
+// Get client by name
+router.post("/info/name", getClientName)
+
+// Companies
+router.get("/companies", getAllCompanies)
 
 export default router;
