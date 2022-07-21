@@ -10,7 +10,7 @@ API.interceptors.request.use((req) =>{
 });
 
 // Login
-export const signIn = (userData) => API.post('users/login', userData);
+export const signIn = (userData) => API.post('login', userData);
 
 // Projects
 export const getProjects = () => API.get('projects/all');

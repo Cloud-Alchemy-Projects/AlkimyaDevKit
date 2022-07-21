@@ -10,7 +10,6 @@ export const sendProjects = async(req, res) =>{
 };
 
 export const newProject = async(req, res) =>{
-
     try {
         await db.query(
             'INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES \
@@ -18,6 +17,16 @@ export const newProject = async(req, res) =>{
             [req.body.NombreProyecto, req.body.Estatus, req.body.Cliente,req.body.Usuario]
             );
         res.status(201).send(`project ${req.body.NombreProyecto} was successfully created`);
+    } catch (error) {
+        console.log(error.message)
+    }
+};
+
+export const getProjectStatus = async(req, res) =>{
+
+    try {
+        const [rows, fields] = await db.query('SELECT * FROM estatusdeProyecto');
+        res.status(200).json(rows);
     } catch (error) {
         console.log(error.message)
     }
