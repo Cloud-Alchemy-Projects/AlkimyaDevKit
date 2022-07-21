@@ -16,4 +16,9 @@ export const signIn = (userData) => API.post('users/login', userData);
 export const getProjects = () => API.get('projects/all');
 
 // User Stories
-export const getUserStories = () => API.get('userstories');
+export const getUserStories = () => API.get('userstories/all');
+export const newUserStories = (userStoriesData) => API.post('userstories/new', userStoriesData);
+export const allEpics = () => API.get('userstories/epics');
+export const newEpic = (epicData) => API.post('userstories/epics/projects', epicData);
+export const allRoles = () => API.get('userstories/roles');
+export const newRole = (epicRol) => API.post('userstories/roles/projects/new', epicRol);

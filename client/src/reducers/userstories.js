@@ -2,8 +2,11 @@ import {FETCH_ALL_US, CREATE_US, UPDATE_US} from "../constants/userstoriesAction
 
 export default (userstories = [], action) => {
     switch (action.type) {
-        case FETCH_ALL_US:    
-            return action.payload;
+        case FETCH_ALL_US:
+            return{ ...userstories, fetchAll: {
+                ...userstories.fetchAll,
+                content: action.payload
+            }}  
         case CREATE_US:
             return [...userstories, action.payload];
         default:
