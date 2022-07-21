@@ -25,7 +25,7 @@ export default makeStyles(() => ({
 	},
 	formContainer: {
 		width: "40vw",
-		// height: "100%",
+		paddingBottom: '20px'
 	},
     fieldsContainer: {
         width:'80%',
