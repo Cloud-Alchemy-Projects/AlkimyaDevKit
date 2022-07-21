@@ -1,4 +1,4 @@
--- Active: 1656693754180@@localhost@3308
+-- Active: 1656693754180@@localhost@3308@alkimyaDevKit
 DROP DATABASE IF EXISTS alkimyaDevKit;
 CREATE DATABASE alkimyaDevKit
 CHARACTER SET utf8
@@ -114,3 +114,26 @@ CREATE TABLE UserStories
     FOREIGN KEY (idProyecto) REFERENCES proyectos (IdProyecto),
     PRIMARY KEY (idUserStory)
 );
+
+-- Datos estaticos
+
+-- Estatus de proyectos
+INSERT INTO estatusdeProyecto(estatus) VALUES ('En espera');
+INSERT INTO estatusdeProyecto(estatus) VALUES ('En planeación');
+INSERT INTO estatusdeProyecto(estatus) VALUES ('En desarrollo');
+INSERT INTO estatusdeProyecto(estatus) VALUES ('Finalizado');
+INSERT INTO estatusdeProyecto(estatus) VALUES ('Entregado al cliente');
+INSERT INTO estatusdeProyecto(estatus) VALUES ('Cancelado');
+
+
+-- Tipos de Usuarios
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Architect');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Scientist');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Process Designer');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Product Owner');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Team Lead');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Cloud Architect');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Cloud Engineer');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Scrum Master');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Back End');
+INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Front End');
