@@ -1,5 +1,5 @@
-import React, {useEffect} from 'react';
-import { Typography, Button, Grid, Box, Paper, IconButton} from "@mui/material";
+import React, {useEffect, useState} from 'react';
+import { Typography, Button, Grid, Box, IconButton, Select, MenuItem, FormControl} from "@mui/material";
 import {useDispatch, useSelector} from 'react-redux';
 import AddIcon from '@mui/icons-material/Add';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -23,10 +23,19 @@ const AllStories = () => {
     console.log(userstories)
     // Recibir datos de todos los proyectos
      
-
     const handleClick = () => {
         history.push("/new")
     }
+
+    const [story, setStory] = useState({
+        projectId: ""
+	});
+
+    const handleChange = (event) => {
+        setStory( { ...story, projectId: event.target.value});
+    };
+
+    const projectNames = [{id: 1, projectName: "Alkimya DevKit"}, {id: 2, projectName: "Vinculación de prácticas"}]
 
     return (
         <div className={classes.mainContainer}>
@@ -42,6 +51,27 @@ const AllStories = () => {
                 </Button>
 
 			</div>
+
+            <div className={classes.projectsContainer}>
+
+                <Typography>
+					PROJECT
+				</Typography>
+
+                <FormControl sx={{width: '20%', marginLeft: '5px', paddingRight: '25px'}} >
+
+                    <Select sx={{fontFamily: 'var(--font-secondary-medium)'}} value={story.projectId} className={classes.selectProjectId} onChange={handleChange}>
+
+                        {projectNames.map((item, index) => {
+                            const { id, projectName } = item;
+                            return (
+                                <MenuItem key={id} sx={{fontFamily: 'var(--font-secondary-medium)'}} value={id}>{projectName}</MenuItem>
+                            )
+                        })}
+                    </Select>
+                </FormControl>
+
+            </div>
 
             <div className={classes.formsContainer_2}>
 
@@ -66,7 +96,7 @@ const AllStories = () => {
                             <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
                             <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
-                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                            <Button size="small" sx={{ color: '#959595', textTransform: "capitalize", fontSize: "12px"  }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
                             </Button>
 
@@ -92,7 +122,7 @@ const AllStories = () => {
                             <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
                             <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
-                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                            <Button size="small" sx={{ color: '#959595', textTransform: "capitalize", fontSize: "12px"  }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
                             </Button>
 
@@ -117,7 +147,7 @@ const AllStories = () => {
 
                             <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
-                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                            <Button size="small" sx={{ color: '#959595', textTransform: "capitalize", fontSize: "12px"  }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
                             </Button>
 
@@ -141,7 +171,7 @@ const AllStories = () => {
                             
                             <Box className={classes.boxContainer} sx={{ opacity: '20%' }}/>
 
-                            <Button size="small" sx={{ color: '#959595' }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
+                            <Button size="small" sx={{ color: '#959595', textTransform: "capitalize", fontSize: "12px"  }} startIcon={<AddIcon sx={{ color: '#959595' }}/>}>
                                 New Card
                             </Button>
 

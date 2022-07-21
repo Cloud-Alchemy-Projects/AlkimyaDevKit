@@ -15,6 +15,14 @@ export default makeStyles(() => ({
 		paddingTop: "20vh",
 		marginBottom: "20px",
     },
+    projectsContainer:{ //Contenedor para el BOTON PROJECTS
+        width: "100%",
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+        marginTop: '-70px',
+		marginBottom: "20px",
+    },
     projectsTypo: {
         color: "#97004D",
 		fontWeight: "700 !important",
