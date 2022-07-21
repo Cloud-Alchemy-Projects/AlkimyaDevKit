@@ -1,15 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Typography, Button, Grid, Box, Paper, IconButton} from "@mui/material";
+import {useDispatch, useSelector} from 'react-redux';
 import AddIcon from '@mui/icons-material/Add';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useHistory } from 'react-router-dom';
 import useStyle from "../styles";
+import {getUserStories} from "../../../actions/userstories.js"
 
 
 const AllStories = () => {
 
     const classes = useStyle() 
     const history = useHistory()
+    const dispatch = useDispatch()
+
+    const userstories = useSelector(state => state.userstories)
+
+    useEffect(() => {
+        dispatch(getUserStories())
+    },[])
+
+    console.log(userstories)
+    // Recibir datos de todos los proyectos
+     
 
     const handleClick = () => {
         history.push("/new")
