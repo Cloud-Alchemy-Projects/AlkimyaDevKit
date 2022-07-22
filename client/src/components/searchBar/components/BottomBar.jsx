@@ -13,7 +13,8 @@ const BottomBar = () => {
     useEffect(() => {
         const pathname = history.location.pathname;
         switch (pathname) {
-            case "/home":
+            case "/clients":
+            case "/clients/new":
                 setValue(0);
                 break;
             case "/projects":
@@ -41,7 +42,7 @@ const BottomBar = () => {
 				>
 					<TabNavigation 
                         label="Clients" 
-                        href="/home"
+                        href="/clients"
                     />
 					<TabNavigation
 						sx={{ marginTop: "20px" }}
