@@ -50,4 +50,12 @@ export default makeStyles(() => ({
 		borderRadius: "10px !important",
         fontFamily: 'var(--font-secondary-bold) !important'
 	},
+	// Styles for -AllProjects-
+	projectContainer: {
+		width: "800%",
+		marginTop: "30px",
+		height: "500px",
+		border: "10px solid black",
+		background: "red",
+	},
 }));
