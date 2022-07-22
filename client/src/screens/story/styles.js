@@ -16,12 +16,12 @@ export default makeStyles(() => ({
 		marginBottom: "20px",
     },
     projectsContainer:{ //Contenedor para el BOTON PROJECTS
-        width: "100%",
+        width: "60.5%",
 		display: "flex",
-		justifyContent: "center",
+		justifyContent: "right",
 		alignItems: "center",
-        marginTop: '-70px',
-		marginBottom: "20px",
+        marginTop: '-60px',
+		marginBottom: "25px",
     },
     projectsTypo: {
         color: "#97004D",
@@ -55,6 +55,19 @@ export default makeStyles(() => ({
             borderColor: '#e20074 !important',
             border: '2px solid'
         },
+    },
+    selectProjectId_2: {
+        fontFamily: 'var(--font-secondary-medium)',
+        [`& fieldset`]: { // <== cambia el borde de los campos de texto
+            border: "none !important",
+            outline: "none !important",
+        },
+    },
+    icon: {
+        fill: "white !important"
+    },
+    root: {
+        color: 'white !important',
     },
     textField: {
 		width: "100%",

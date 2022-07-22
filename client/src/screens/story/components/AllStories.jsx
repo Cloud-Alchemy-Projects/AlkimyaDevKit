@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Typography, Button, Grid, Box, IconButton, Select, MenuItem, FormControl} from "@mui/material";
+import { Typography, Button, Grid, Box, IconButton, Select, MenuItem, FormControl, Paper, Divider} from "@mui/material";
 import {useDispatch, useSelector} from 'react-redux';
 import AddIcon from '@mui/icons-material/Add';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -15,26 +15,22 @@ const AllStories = () => {
     const dispatch = useDispatch()
 
     const userstories = useSelector(state => state.userstories)
-
     useEffect(() => {
         dispatch(getUserStories())
     },[])
-
     console.log(userstories)
     // Recibir datos de todos los proyectos
-     
     const handleClick = () => {
         history.push("/new")
     }
 
+    //Constante para el formulario de Project's Name
     const [story, setStory] = useState({
         projectId: ""
 	});
-
     const handleChange = (event) => {
         setStory( { ...story, projectId: event.target.value});
     };
-
     const projectNames = [{id: 1, projectName: "Alkimya DevKit"}, {id: 2, projectName: "Vinculación de prácticas"}]
 
     return (
@@ -54,22 +50,31 @@ const AllStories = () => {
 
             <div className={classes.projectsContainer}>
 
-                <Typography>
-					PROJECT
-				</Typography>
+                <Paper component="form" sx={{display: "flex", alignItems: "center", width: 320, height: 40, backgroundColor: "#97004D"}} >
+                    <Typography sx={{fontFamily: 'var(--font-secondary-thin)', color: "white", marginLeft: '10px' }}  >
+					    PROJECT
+				    </Typography>
 
-                <FormControl sx={{width: '20%', marginLeft: '5px', paddingRight: '25px'}} >
+                    <Divider sx={{ marginLeft: '10px',background: "white" }} orientation="vertical"/>
 
-                    <Select sx={{fontFamily: 'var(--font-secondary-medium)'}} value={story.projectId} className={classes.selectProjectId} onChange={handleChange}>
+                    <FormControl fullWidth>
 
+                    <Select sx={{fontFamily: 'var(--font-secondary-thin)', color: "white" }} value={story.projectId} className={classes.selectProjectId_2} onChange={handleChange} 
+                    inputProps={{
+                        classes: {
+                            icon: classes.icon,
+                            root: classes.root,
+                        },
+                    }}>
                         {projectNames.map((item, index) => {
                             const { id, projectName } = item;
                             return (
-                                <MenuItem key={id} sx={{fontFamily: 'var(--font-secondary-medium)'}} value={id}>{projectName}</MenuItem>
+                                <MenuItem key={id} sx={{fontFamily: 'var(--font-secondary-medium)' }} value={id}>{projectName}</MenuItem>
                             )
                         })}
                     </Select>
-                </FormControl>
+                    </FormControl>
+                </Paper>
 
             </div>
 
