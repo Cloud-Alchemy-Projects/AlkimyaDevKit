@@ -1,15 +1,3 @@
--- Active: 1656814242853@@localhost@3308@alkimyaDevKit
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Architect');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Scientist');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Process Designer');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Product Owner');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Team Lead');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Cloud Architect');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Cloud Engineer');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Scrum Master');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Back End');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Front End');
-
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','TSystems',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','TSystems',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','TSystems',1);
@@ -47,11 +35,6 @@ INSERT INTO clientes (NombreCliente,ApellidoPaterno,ApellidoMaterno,Telefono,Cor
 INSERT INTO clientes (NombreCliente,ApellidoPaterno,ApellidoMaterno,Telefono,Correo,Compania) VALUES ('Paola','Rodríguez','Juárez',2213459876,'paola.rod.jua@epsol.mx',2);
 INSERT INTO clientes (NombreCliente,ApellidoPaterno,ApellidoMaterno,Telefono,Correo,Compania) VALUES ('Juan Pablo','Miramón','Mejía',2215788779,'juanpablo_miramon@epsol.mx',2);
 
-INSERT INTO estatusdeProyecto(estatus) VALUES ('Aprobado');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('En desarrollo');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('Finalizado');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('Cancelado');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('En espera');
 
 INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto1',3,1,2);
 INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto2',3,1,2);
@@ -72,32 +55,35 @@ INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto
 INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto17',4,9,12);
 INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto18',2,10,14);
 
-INSERT INTO epic (nombreEpic, descripcion) VALUES 
-    ("Epic1", "Descripcion1"),
-    ("Epic2", "Descripcion2"),
-    ("Epic3", "Descripcion3"),
-    ("Epic4", "Descripcion4"),
-    ("Epic5", "Descripcion5"),
-    ("Epic6", "Descripcion6"),
-    ("Epic7", "Descripcion7")
+INSERT INTO epic (nombreEpic, descripcion, idProyecto) VALUES 
+    ("Epic1", "Descripcion1", 5),
+    ("Epic2", "Descripcion2", 5),
+    ("Epic3", "Descripcion3", 3),
+    ("Epic4", "Descripcion4", 3),
+    ("Epic5", "Descripcion5", 17),
+    ("Epic6", "Descripcion6", 17),
+    ("Epic7", "Descripcion7", 2),
+    ("Epic8", "Descripcion8", 2)
 ;
 
-INSERT INTO rol (nombreRol, descripcion, actores) VALUES 
-    ("Rol1", "Descripcion1", 2),
-    ("Rol2", "Descripcion2", 1),
-    ("Rol3", "Descripcion3", 2),
-    ("Rol4", "Descripcion4", 2),
-    ("Rol5", "Descripcion5", 3),
-    ("Rol6", "Descripcion6", 2),
-    ("Rol7", "Descripcion7", 1)
+INSERT INTO rol (nombreRol, descripcion, actores, idProyecto) VALUES 
+    ("Rol1", "Descripcion1", 2, 17),
+    ("Rol2", "Descripcion2", 1, 17),
+    ("Rol3", "Descripcion3", 2, 13),
+    ("Rol4", "Descripcion4", 2, 13),
+    ("Rol5", "Descripcion5", 3, 5),
+    ("Rol6", "Descripcion6", 2, 5),
+    ("Rol7", "Descripcion7", 1, 1),
+    ("Rol8", "Descripcion8", 1, 1)
 ;
 
 INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto) VALUES 
-    ("quiero1", "pueda1", "story1", "nota general1", 1, 1, 7, 1),
-    ("quiero2", "pueda2", "story2", "nota general2", 2, 2, 6, 2),
-    ("quiero3", "pueda3", "story3", "nota general3", 3, 3, 5, 3),
-    ("quiero4", "pueda4", "story4", "nota general4", 4, 4, 4, 4),
-    ("quiero5", "pueda5", "story5", "nota general5", 5, 5, 3, 5),
-    ("quiero6", "pueda6", "story6", "nota general6", 6, 6, 2, 6),
-    ("quiero7", "pueda7", "story7", "nota general7", 7, 7, 1, 7)
+    ("quiero1", "pueda1", "story1", "nota general1", 1, 1, 8, 1),
+    ("quiero2", "pueda2", "story2", "nota general2", 2, 2, 7, 2),
+    ("quiero3", "pueda3", "story3", "nota general3", 3, 3, 6, 3),
+    ("quiero4", "pueda4", "story4", "nota general4", 4, 4, 5, 4),
+    ("quiero5", "pueda5", "story5", "nota general5", 5, 5, 4, 5),
+    ("quiero6", "pueda6", "story6", "nota general6", 6, 6, 3, 6),
+    ("quiero7", "pueda7", "story7", "nota general7", 7, 7, 2, 7),
+    ("quiero7", "pueda7", "story7", "nota general7", 8, 8, 1, 8)
 ;

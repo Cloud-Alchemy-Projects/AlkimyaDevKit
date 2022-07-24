@@ -13,7 +13,7 @@ const TopBar = ({ color }) => {
 			<div className={classes.appBar}>
 				<div className={classes.rightContainer}>
 					<div className={classes.textToRight}>
-						<Typography variant="h5" sx={{ color: color }}>
+						<Typography variant="h5" sx={{ color: color, fontSize: '40px' }}>
 							Alkimya{" "}
 							<strong className={classes.toPink}>Dev</strong>Kit
 						</Typography>

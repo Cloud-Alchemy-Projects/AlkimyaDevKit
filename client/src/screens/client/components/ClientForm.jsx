@@ -1,26 +1,33 @@
 import { React, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import useStyles from "../styles";
 import { Typography, TextField, Button, Grid } from "@mui/material";
+import {newClient} from "../../../actions/client.js"
 
-const ProjectsForm = () => {
+const ClientForm = () => {
 	const classes = useStyles();
-	const [project, setProject] = useState({
-		name: "",
-		status: "",
-		client: "",
-		attendant: "",
+	const dispatch = useDispatch();
+
+	const [client, setClient] = useState({
+		NombreCliente: "",
+		ApellidoPaterno: "",
+		ApellidoMaterno: "",
+		Telefono: "",
+		Correo: "",
+		Compania: "",
 	});
 
 	const submit = (event) => {
 		event.preventDefault();
-		console.log(project);
+		dispatch(newClient(client))
+		console.log(client);
 	};
 
 	return (
 		<div className={classes.mainContainer}>
 			<div className={classes.typoContainer}>
 				<Typography className={classes.projectsTypo} variant="h4">
-					New Project
+					New Client
 				</Typography>
 			</div>
 
@@ -36,7 +43,7 @@ const ProjectsForm = () => {
 							variant="subtitle2"
 							className={classes.formsTypo}
 						>
-							Project Name
+							Client Name
 						</Typography>
 						<TextField
 							hiddenLabel
@@ -46,7 +53,7 @@ const ProjectsForm = () => {
 							focused
 							InputProps={{spellCheck: "false", style: {fontFamily: 'var(--font-secondary-medium)'}}}
 							onChange={(e) =>
-								setProject({ ...project, name: e.target.value })
+								setClient({ ...client, NombreCliente: e.target.value })
 							}
 						/>
 					</Grid>
@@ -57,7 +64,7 @@ const ProjectsForm = () => {
 							variant="subtitle2"
 							className={classes.formsTypo}
 						>
-							Project Status
+							Paternal Surname
 						</Typography>
 						<TextField
 							fullWidth
@@ -68,9 +75,9 @@ const ProjectsForm = () => {
 							focused
 							InputProps={{spellCheck: "false", style: {fontFamily: 'var(--font-secondary-medium)'}}}
 							onChange={(e) =>
-								setProject({
-									...project,
-									status: e.target.value,
+								setClient({
+									...client,
+									ApellidoPaterno: e.target.value,
 								})
 							}
 						/>
@@ -82,7 +89,7 @@ const ProjectsForm = () => {
 							variant="subtitle2"
 							className={classes.formsTypo}
 						>
-							Client's Name
+							Maternal Surname
 						</Typography>
 						<TextField
 							fullWidth
@@ -93,9 +100,9 @@ const ProjectsForm = () => {
 							focused
 							InputProps={{spellCheck: "false", style: {fontFamily: 'var(--font-secondary-medium)'}}}
 							onChange={(e) =>
-								setProject({
-									...project,
-									client: e.target.value,
+								setClient({
+									...client,
+									ApellidoMaterno: e.target.value,
 								})
 							}
 						/>
@@ -107,7 +114,7 @@ const ProjectsForm = () => {
 							variant="subtitle2"
 							className={classes.formsTypo}
 						>
-							Attendant's Name
+							Phone Number
 						</Typography>
 						<TextField
 							
@@ -119,9 +126,59 @@ const ProjectsForm = () => {
 							focused
                             InputProps={{spellCheck: "false", style: {fontFamily: 'var(--font-secondary-medium)'}}}
 							onChange={(e) =>
-								setProject({
-									...project,
-									attendant: e.target.value,
+								setClient({
+									...client,
+									Telefono: e.target.value,
+								})
+							}
+						/>
+					</Grid>
+					<Grid item xs={6}>
+						<Typography
+							align="left"
+							variant="subtitle2"
+							className={classes.formsTypo}
+						>
+							Email
+						</Typography>
+						<TextField
+							
+							fullWidth
+							hiddenLabel
+							size="small"
+							className={classes.textField}
+							variant="outlined"
+							focused
+                            InputProps={{spellCheck: "false", style: {fontFamily: 'var(--font-secondary-medium)'}}}
+							onChange={(e) =>
+								setClient({
+									...client,
+									Correo: e.target.value,
+								})
+							}
+						/>
+					</Grid>
+					<Grid item xs={6}>
+						<Typography
+							align="left"
+							variant="subtitle2"
+							className={classes.formsTypo}
+						>
+							Company
+						</Typography>
+						<TextField
+							
+							fullWidth
+							hiddenLabel
+							size="small"
+							className={classes.textField}
+							variant="outlined"
+							focused
+                            InputProps={{spellCheck: "false", style: {fontFamily: 'var(--font-secondary-medium)'}}}
+							onChange={(e) =>
+								setClient({
+									...client,
+									Compania: e.target.value,
 								})
 							}
 						/>
@@ -144,4 +201,4 @@ const ProjectsForm = () => {
 	);
 };
 
-export default ProjectsForm;
+export default ClientForm;
