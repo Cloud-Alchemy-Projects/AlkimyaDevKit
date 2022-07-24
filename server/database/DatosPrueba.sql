@@ -1,5 +1,3 @@
--- Active: 1656693754180@@localhost@3308@alkimyaDevKit
-
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','TSystems',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','TSystems',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','TSystems',1);

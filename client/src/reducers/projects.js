@@ -11,4 +11,5 @@ export default (projects = [], action) => {
         default:
             return projects;
     }
+
 };

@@ -27,7 +27,7 @@ export default makeStyles(() => ({
 	},
 	logoIcon: {
 		// <== Aqui se define el estilo del logo
-		width: "70px",
+		width: "90px",
 	},
 	topText: {
 		width: "80%",

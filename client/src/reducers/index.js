@@ -4,12 +4,12 @@ import users from './users';
 import projects from './projects';
 import userstories from './userstories';
 import auth from './auth';
-import clients from './clients';
+import client from './client';
 
 export default combineReducers({
     users,
     projects,
     userstories,
-    clients,
-    auth
+    auth,
+    client
 });

@@ -1,4 +1,3 @@
--- Active: 1656693754180@@localhost@3308@alkimyaDevKit
 DROP DATABASE IF EXISTS alkimyaDevKit;
 CREATE DATABASE alkimyaDevKit
 CHARACTER SET utf8
