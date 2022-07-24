@@ -17,7 +17,7 @@ export const newClient = (clientData) => API.post('clients/new', clientData);
 
 
 // Projects
-export const getProjects = () => API.get('projects');
+export const getProjects = () => API.get('projects/all');
 export const getProjectStatus = () => API.get('projects/status');
 export const createProject = (projectInfo) => API.post('projects/new', projectInfo);
 
@@ -30,7 +30,6 @@ export const searchClient = (clientName) => API.post('clients/info/name', client
 
 // Users
 export const getUsers = () => API.get('users/all')
-export const getProjects = () => API.get('projects/all');
 
 // User Stories
 export const getUserStories = () => API.get('userstories/all');
