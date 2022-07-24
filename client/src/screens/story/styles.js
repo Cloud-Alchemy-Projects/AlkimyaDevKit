@@ -72,7 +72,8 @@ export default makeStyles(() => ({
         width: '100% !important',
         height: '100% !important',
         padding: '0 !important',
-        fontFamily: 'var(--font-secondary-bold) !important'
+        fontFamily: 'var(--font-secondary-bold) !important',
+    },
     selectProjectId_2: {
         fontFamily: 'var(--font-secondary-medium)',
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
@@ -93,13 +94,13 @@ export default makeStyles(() => ({
             borderColor: '#e20074 !important',
             border: '2px solid'
         },
-	},
+    },
     textField_Epic: {
 		width: "100%",
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
             borderRadius: 10,
         },
-	},
+    },
     storyContainer: {
         display:'flex',
         flexDirection: 'column',
