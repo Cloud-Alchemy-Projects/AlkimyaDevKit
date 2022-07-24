@@ -17,7 +17,7 @@ export const newClient = (clientData) => API.post('clients/new', clientData);
 
 
 // Projects
-export const getProjects = () => API.get('projects');
+export const getProjects = () => API.get('projects/all');
 
 // User Stories
-export const getUserStories = () => API.get('userstories');
+export const getUserStories = () => API.get('userstories/all');

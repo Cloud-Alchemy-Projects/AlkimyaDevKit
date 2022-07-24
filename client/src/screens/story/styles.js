@@ -7,11 +7,6 @@ export default makeStyles(() => ({
         backgroundColor: "white",
         paddingLeft: "400px"
     },
-    projectsContainer: { //Contenedor general para la vista stories
-        width: '100%',
-        height: '100%',
-        paddingLeft: '310px'
-    },
     typoContainer:{ //Contenedor para el texto New User Story
         width: "100%",
 		display: "flex",
@@ -20,12 +15,30 @@ export default makeStyles(() => ({
 		paddingTop: "20vh",
 		marginBottom: "20px",
     },
+    projectsContainer:{ //Contenedor para el BOTON PROJECTS
+        width: "60.5%",
+		display: "flex",
+		justifyContent: "right",
+		alignItems: "center",
+        marginTop: '-60px',
+		marginBottom: "25px",
+    },
     projectsTypo: {
         color: "#97004D",
 		fontWeight: "700 !important",
     },
+    paperTypo: {
+        color: "#242424",
+		fontWeight: "600 !important",
+        marginRight: '49px !important'
+    },
     formsContainer: { //Contenedor para los campos de texto
         width: "45vw",
+        height: 'auto',
+		paddingBottom: '25px'
+    },
+    formsContainer_2: { //Contenedor para los campos de texto
+        width: "65vw",
         height: 'auto',
 		paddingBottom: '25px'
     },
@@ -42,6 +55,19 @@ export default makeStyles(() => ({
             borderColor: '#e20074 !important',
             border: '2px solid'
         },
+    },
+    selectProjectId_2: {
+        fontFamily: 'var(--font-secondary-medium)',
+        [`& fieldset`]: { // <== cambia el borde de los campos de texto
+            border: "none !important",
+            outline: "none !important",
+        },
+    },
+    icon: {
+        fill: "white !important"
+    },
+    root: {
+        color: 'white !important',
     },
     textField: {
 		width: "100%",
@@ -75,6 +101,22 @@ export default makeStyles(() => ({
         padding: '10px 40px !important',
         borderRadius: "10px !important",
         fontFamily: 'var(--font-secondary-bold) !important'
+    },
+    paperContainer:{ //ESTE ES EL CONTENEDOR DE LOS CUADROS ROSADOS
+        backgroundColor: '#E6E6E6 !important',
+        borderRadius: '10px !important',
+        height: "100%",
+        marginLeft: "25px !important"
+    },
+    boxContainer:{
+        width: "auto !important",
+        marginRight: '25px !important', 
+        height: "110px !important",
+        marginBottom: "5px !important",
+        display: 'flex !important',
+        displayDirection: 'column !important',
+        backgroundColor: '#E20074 !important',
+        borderRadius: '10px'
     }
     
 }));
