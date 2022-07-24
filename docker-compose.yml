@@ -15,7 +15,6 @@ services:
     container_name: DevKit-Back
     stdin_open: true
     tty: true
-    #command: npm start
     depends_on:
       - mysql
     build: ./server
@@ -23,6 +22,7 @@ services:
       - "1010:1010"
     volumes:
       - ./server:/app
+      - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true
     env_file:

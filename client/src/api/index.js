@@ -21,3 +21,8 @@ export const getProjects = () => API.get('projects/all');
 
 // User Stories
 export const getUserStories = () => API.get('userstories/all');
+export const newUserStory = (userStoryData) => API.post('userstories/new', userStoryData);
+export const allEpics = () => API.get('userstories/epics');
+export const newEpic = (epicData) => API.post('userstories/epics/projects/new', epicData);
+export const allRoles = () => API.get('userstories/roles');
+export const newRole = (epicRol) => API.post('userstories/roles/projects/new', epicRol);

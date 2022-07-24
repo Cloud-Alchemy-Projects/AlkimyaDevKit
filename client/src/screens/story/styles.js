@@ -7,6 +7,13 @@ export default makeStyles(() => ({
         backgroundColor: "white",
         paddingLeft: "400px"
     },
+    circularContainer: { //Contenedor general para la vista stories
+        width: '100%',
+        height: '100%',
+        display:'flex',
+        justifyContent:'center',
+        alignItems: 'center'
+    },
     typoContainer:{ //Contenedor para el texto New User Story
         width: "100%",
 		display: "flex",
@@ -56,6 +63,17 @@ export default makeStyles(() => ({
             border: '2px solid'
         },
     },
+    newRoleItem:{
+        display:'flex', 
+        justifyContent:'center',
+        padding: '0 !important'
+    },
+    newRoleButton:{
+        width: '100% !important',
+        height: '100% !important',
+        padding: '0 !important',
+        fontFamily: 'var(--font-secondary-bold) !important',
+    },
     selectProjectId_2: {
         fontFamily: 'var(--font-secondary-medium)',
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
@@ -76,18 +94,37 @@ export default makeStyles(() => ({
             borderColor: '#e20074 !important',
             border: '2px solid'
         },
-	},
+    },
     textField_Epic: {
 		width: "100%",
         [`& fieldset`]: { // <== cambia el borde de los campos de texto
             borderRadius: 10,
         },
-	},
-    lastGrid: {
+    },
+    storyContainer: {
+        display:'flex',
+        flexDirection: 'column',
+        backgroundColor:'black',
+        borderRadius: '10px',
+        marginTop:'20px',
+        padding: '20px'
+    },
+    tittleStory:{
+        color: "white",
+        fontFamily: "var(--font-secondary-bold) !important"
+    },
+    textStory:{
+        fontFamily: "var(--font-secondary-regular) !important",
+        [`& fieldset`]: { // <== cambia el borde de los campos de texto
+            border: 'none',
+        },
+    },
+    lastField:{
+        width: '100%',
         height: '100%',
         display:'flex',
-        justifyContent:'space-between',
-        flexDirection: 'column'
+        flexDirection:'column',
+        justifyContent:'center',
     },
     buttonContainer: {
         width: '100%',
