@@ -16,7 +16,7 @@ export default makeStyles(() => ({
 		marginBottom: "30px",
 	},
 	rightContainer: {
-		marginLeft: "20px",
+		marginLeft: "40px",
 	},
 	textToRight: {
 		width: "100%",
