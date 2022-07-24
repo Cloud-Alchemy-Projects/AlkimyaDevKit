@@ -15,7 +15,7 @@ services:
     container_name: DevKit-Back
     stdin_open: true
     tty: true
-    command: npm start
+    #command: npm start
     depends_on:
       - mysql
     build: ./server

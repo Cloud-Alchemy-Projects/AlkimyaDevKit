@@ -1,9 +1,13 @@
 import { React, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import useStyles from "../styles";
 import { Typography, TextField, Button, Grid } from "@mui/material";
+import {newClient} from "../../../actions/client.js"
 
 const ClientForm = () => {
 	const classes = useStyles();
+	const dispatch = useDispatch();
+
 	const [client, setClient] = useState({
 		NombreCliente: "",
 		ApellidoPaterno: "",
@@ -15,6 +19,7 @@ const ClientForm = () => {
 
 	const submit = (event) => {
 		event.preventDefault();
+		dispatch(newClient(client))
 		console.log(client);
 	};
 
