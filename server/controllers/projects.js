@@ -14,9 +14,9 @@ export const newProject = async(req, res) =>{
         await db.query(
             'INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES \
             (?,?,?,?)', 
-            [req.body.NombreProyecto, req.body.Estatus, req.body.Cliente,req.body.Usuario]
+            [req.body.name, req.body.status, req.body.client,req.body.attendant]
             );
-        res.status(201).send(`project ${req.body.NombreProyecto} was successfully created`);
+        res.status(201).send(`project ${req.body.name} was successfully created`);
     } catch (error) {
         console.log(error.message)
     }

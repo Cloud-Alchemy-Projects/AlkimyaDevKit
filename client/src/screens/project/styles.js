@@ -1,4 +1,5 @@
 import { makeStyles } from "@mui/styles";
+import { height } from "@mui/system";
 
 export default makeStyles(() => ({
 	mainContainer: {
@@ -16,15 +17,24 @@ export default makeStyles(() => ({
 		alignItems: "center",
 		paddingTop: "20vh",
 		marginBottom: "20px",
+        marginLeft:'16px'
 	},
 	projectsTypo: {
 		color: "#97004D",
 		fontWeight: "700 !important",
 	},
 	formContainer: {
-		width: "45vw",
-		// height: "100%",
+		width: "40vw",
+		paddingBottom: '20px'
 	},
+    fieldsContainer: {
+        width:'80%',
+        display:'flex',
+        justifyContent:'space-between'
+    },
+    fieldWrapper: {
+        width:'100%'
+    },
 	formsTypo: {
 		color: "#97004D",
 		textTransform: "uppercase",
@@ -38,6 +48,15 @@ export default makeStyles(() => ({
 			borderRadius: 10,
 		},
 	},
+    selects: {
+        widht:'100%',
+        fontFamily: 'var(--font-secondary-medium)',
+        [`& fieldset`]: { // <== cambia el borde de los campos de texto
+            borderRadius: 10,
+            borderColor: '#e20074 !important',
+            border: '2px solid'
+        },
+    },
 	centerButton: {
 		width: "100%",
 		display: "flex",
@@ -50,4 +69,30 @@ export default makeStyles(() => ({
 		borderRadius: "10px !important",
         fontFamily: 'var(--font-secondary-bold) !important'
 	},
+    // Client information
+    clientInfoContainer:{
+        marginTop: '20px',
+        widht:'100%',
+        heigth: '100%',
+        backgroundColor: 'black',
+        borderRadius: '20px',
+        display: 'flex',
+        paddingBottom: '20px'
+    },
+    clientInfoFields: {
+        width: "100%",
+        color: "white !important",
+		[`& fieldset`]: {
+			// <== cambia el borde de los campos de texto
+			borderRadius: 10,
+            borderColor: 'white !important',
+            color: 'white'
+		},
+    },
+    clientInfoText: {
+        color: "white",
+		textTransform: "uppercase",
+		marginTop: "20px !important",
+        fontFamily: "var(--font-secondary-bold) !important"
+    }
 }));

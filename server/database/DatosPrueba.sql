@@ -1,14 +1,3 @@
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Architect');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Data Scientist');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Process Designer');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Product Owner');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Team Lead');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Cloud Architect');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Cloud Engineer');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('Scrum Master');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Back End');
-INSERT INTO tipoUsuarios (TipoUsuario) VALUES ('DevOps - Front End');
-
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','TSystems',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','TSystems',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','TSystems',1);
@@ -46,11 +35,6 @@ INSERT INTO clientes (NombreCliente,ApellidoPaterno,ApellidoMaterno,Telefono,Cor
 INSERT INTO clientes (NombreCliente,ApellidoPaterno,ApellidoMaterno,Telefono,Correo,Compania) VALUES ('Paola','Rodríguez','Juárez',2213459876,'paola.rod.jua@epsol.mx',2);
 INSERT INTO clientes (NombreCliente,ApellidoPaterno,ApellidoMaterno,Telefono,Correo,Compania) VALUES ('Juan Pablo','Miramón','Mejía',2215788779,'juanpablo_miramon@epsol.mx',2);
 
-INSERT INTO estatusdeProyecto(estatus) VALUES ('Aprobado');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('En desarrollo');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('Finalizado');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('Cancelado');
-INSERT INTO estatusdeProyecto(estatus) VALUES ('En espera');
 
 INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto1',3,1,2);
 INSERT INTO proyectos (NombreProyecto,Estatus,Cliente,Usuario) VALUES ('Proyecto2',3,1,2);
