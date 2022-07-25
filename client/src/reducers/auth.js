@@ -4,7 +4,7 @@ const authReducer = (state = [], action) => {
     switch (action.type) {
         case AUTH :
             localStorage.setItem("auth-token",  action.token );
-            return [ ...state, action.token ];
+            return action.token;
         default:
             return state;
     };
