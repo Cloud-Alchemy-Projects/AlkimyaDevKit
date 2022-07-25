@@ -35,7 +35,7 @@ export default makeStyles(() => ({
 		display: "flex",
 		flexDirection: "row",
 		marginBottom: "70px",
-		alignItems: "end",
+		alignItems: "center",
 		justifyContent: "space-between",
 	},
 	welcomeText: {

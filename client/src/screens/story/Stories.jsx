@@ -9,7 +9,7 @@ const Stories = () => {
 
     return (
         <>
-            <ToolsBar user="User"/>
+            <ToolsBar/>
             <SearchBar color="black"/>
             <BrowserRouter basename="/story">
                 <Switch>

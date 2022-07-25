@@ -24,7 +24,7 @@ const Home = () => {
 
     return (
         <div className={classes.mainContainer}>
-            <ToolsBar user="User"/>
+            <ToolsBar/>
             <SearchBar color="white"/>
             <div className={classes.homeContainer}>
                 <div className={classes.typoContainer}>
