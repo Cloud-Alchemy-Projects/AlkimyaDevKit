@@ -8,6 +8,13 @@ export default makeStyles(() => ({
 		backgroundColor: "white",
 		paddingLeft: "400px",
 	},
+    circularContainer: { //Contenedor general para la vista stories
+        width: '100%',
+        height: '100%',
+        display:'flex',
+        justifyContent:'center',
+        alignItems: 'center'
+    },
 	typoContainer: {
 		//Contenedor para el texto New Project
 		width: "100%",
@@ -50,4 +57,23 @@ export default makeStyles(() => ({
 		borderRadius: "10px !important",
         fontFamily: 'var(--font-secondary-bold) !important'
 	},
+    selectProjectId: {
+        fontFamily: 'var(--font-secondary-medium)',
+        [`& fieldset`]: { // <== cambia el borde de los campos de texto
+            borderRadius: 10,
+            borderColor: '#e20074 !important',
+            border: '2px solid'
+        },
+    },
+    newRoleItem:{
+        display:'flex', 
+        justifyContent:'center',
+        padding: '0 !important'
+    },
+    newRoleButton:{
+        width: '100% !important',
+        height: '100% !important',
+        padding: '0 !important',
+        fontFamily: 'var(--font-secondary-bold) !important',
+    },
 }));

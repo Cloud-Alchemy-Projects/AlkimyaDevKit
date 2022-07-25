@@ -1,18 +1,19 @@
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','TSystems',1);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','TSystems',1);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','TSystems',1);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (722,'Jonathan','Valencia','Tescucano','TSystems',2);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (899,'Juan','Pérez','Pérez','TSystems',3);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (745,'Hilda','López','Díaz','TSystems',4);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (346,'Juana','Hernández','Hernández','TSystems',5);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (856,'Pedro','Rodríguez','Ordaz','TSystems',6);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (260,'David','Morales','Pérez','TSystems',7);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (429,'Genaro','Díaz','Ordaz','TSystems',8);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (390,'María','Juanes','Márquez','TSystems',9);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (456,'Andrea','Aedo','Santana','TSystems',10);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (952,'Guillermo','Peña','López','TSystems',9);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (100,'Víctor','Rodríguez','Moreno','TSystems',8);
-INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (400,'Santiago','Pineda','Morales','TSystems',4);
+-- Active: 1656693754180@@localhost@3308@alkimyaDevKit
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (722,'Jonathan','Valencia','Tescucano','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',2);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (899,'Juan','Pérez','Pérez','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',3);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (745,'Hilda','López','Díaz','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',4);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (346,'Juana','Hernández','Hernández','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',5);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (856,'Pedro','Rodríguez','Ordaz','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',6);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (260,'David','Morales','Pérez','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',7);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (429,'Genaro','Díaz','Ordaz','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',8);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (390,'María','Juanes','Márquez','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',9);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (456,'Andrea','Aedo','Santana','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',10);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (952,'Guillermo','Peña','López','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',9);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (100,'Víctor','Rodríguez','Moreno','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',8);
+INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (400,'Santiago','Pineda','Morales','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',4);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (0,'Develop','Develop','Develop','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',10);
 
 

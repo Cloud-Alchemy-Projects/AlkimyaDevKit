@@ -13,7 +13,7 @@ const StoriesForms = () => {
 	const classes = useStyles();
 
 	const dispatch = useDispatch();
-	const projects = useSelector((state) => state.projects);
+	const projects = useSelector((state) => state.projects.fetchAllProjects);
 	const roles = useSelector((state) => state.userstories.fetchAllRoles);
 	const epics = useSelector((state) => state.userstories.fetchAllEpics);
 
@@ -25,7 +25,7 @@ const StoriesForms = () => {
 
 	return (
 		<div className={classes.mainContainer}>
-        {epics===undefined?
+        {(projects&&roles&&epics)===undefined?
             <div className={classes.circularContainer}>
                 <CircularProgress />
             </div>

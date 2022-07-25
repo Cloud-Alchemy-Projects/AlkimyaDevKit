@@ -29,7 +29,6 @@ const BottomBar = () => {
                 setValue(0);
                 break;
         }
-        console.log(pathname);
     }, [history.location.pathname]);
 
 	return (
@@ -38,19 +37,17 @@ const BottomBar = () => {
 				<Tabs
 					orientation="vertical"
 					value={value}
-					// onChange={handleChange}
 				>
 					<TabNavigation 
                         label="Clients" 
                         href="/clients"
                     />
 					<TabNavigation
-						sx={{ marginTop: "20px" }}
+						sx={{ margin: "20px 0px" }}
 						href="/projects"
 						label="Project"
 					/>
 					<TabNavigation
-						sx={{ marginTop: "20px" }}
 						label="User Stories"
                         href="/story"
 					/>

@@ -114,6 +114,7 @@ const Form = ({projects, roles, epics}) => {
 						</Typography>
 						<FormControl fullWidth size="small">
 							<Select
+                                required
 								sx={{
 									fontFamily: "var(--font-secondary-medium)",
 								}}
@@ -150,6 +151,7 @@ const Form = ({projects, roles, epics}) => {
 						</Typography>
 						<FormControl fullWidth size="small">
                             <Select
+                                required
 								sx={{
 									fontFamily: "var(--font-secondary-medium)",
 								}}
@@ -198,6 +200,7 @@ const Form = ({projects, roles, epics}) => {
 						</Typography>
                         <FormControl fullWidth size="small">
 							<Select
+                                required
 								sx={{
 									fontFamily: "var(--font-secondary-medium)",
 								}}
@@ -314,6 +317,7 @@ const Form = ({projects, roles, epics}) => {
 						</Typography>
                         <FormControl fullWidth size="small">
 							<Select
+                                required
 								sx={{
 									fontFamily: "var(--font-secondary-medium)",
 								}}

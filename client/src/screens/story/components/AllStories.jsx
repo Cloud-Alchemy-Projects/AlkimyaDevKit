@@ -18,7 +18,7 @@ const AllStories = () => {
     useEffect(() => {
         dispatch(getUserStories())
     },[])
-    console.log(userstories)
+
     // Recibir datos de todos los proyectos
     const handleClick = () => {
         history.push("/new")

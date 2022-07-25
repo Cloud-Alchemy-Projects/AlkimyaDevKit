@@ -9,6 +9,13 @@ export default makeStyles(() => ({
 		backgroundColor: "white",
 		paddingLeft: "400px",
 	},
+    circularContainer: { //Contenedor general para la vista stories
+        width: '100%',
+        height: '100%',
+        display:'flex',
+        justifyContent:'center',
+        alignItems: 'center'
+    },
 	typoContainer: {
 		//Contenedor para el texto New Project
 		width: "100%",
