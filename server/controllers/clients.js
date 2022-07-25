@@ -49,6 +49,23 @@ export const postNewClient = async (req, res) => {
 	}
 };
 
+export const postNewCompany = async (req, res) => {
+	try {
+		await db.query(
+			"INSERT INTO companias (nombreCompania) VALUES \
+            (?)",
+			[
+				req.body.nombreCompania,
+			]
+		);
+		res.status(201).send(
+			`Company ${req.body.nombreCompania} was successfully created`
+		);
+	} catch (error) {
+		console.log(error.message);
+	}
+};
+
 export const getAllCompanies = async (req, res) => {
 	try {
 		const [rows, fields] = await db.query("SELECT * FROM companias;");
