@@ -31,6 +31,16 @@ export const newUserStory = async (req, res) => {
 	}
 };
 
+export const getUserStoryStatus = async(req, res) =>{ // GET STATUS OF USER STORIES
+
+    try {
+        const [rows, fields] = await db.query('SELECT * FROM estatusdeUserStory');
+        res.status(200).json(rows);
+    } catch (error) {
+        console.log(error.message)
+    }
+};
+
 export const getRoles = async (req, res) => {
 	try {
 		const [rows, fields] = await db.query("SELECT * FROM rol");

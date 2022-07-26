@@ -1,5 +1,5 @@
 import express from "express";
-import {getUserStories, newUserStory, getRoles, getEpics, getRolesProject, newRoleProject, getEpicsProject, newEpicProject} from "../controllers/userstories.js"
+import {getUserStories, newUserStory, getRoles, getEpics, getRolesProject, newRoleProject, getEpicsProject, newEpicProject, getUserStoryStatus} from "../controllers/userstories.js"
 
 const router = express.Router()
 
@@ -16,6 +16,9 @@ router.post("/roles/projects/new", newRoleProject)
 router.get("/epics", getEpics)
 router.post("/epics/projects", getEpicsProject)
 router.post("/epics/projects/new", newEpicProject)
+
+//Status
+router.get("/status", getUserStoryStatus)
 
 
 export default router;
