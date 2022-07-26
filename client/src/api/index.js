@@ -34,3 +34,4 @@ export const allEpics = () => API.get('userstories/epics');
 export const newEpic = (epicData) => API.post('userstories/epics/projects/new', epicData);
 export const allRoles = () => API.get('userstories/roles');
 export const newRole = (epicRol) => API.post('userstories/roles/projects/new', epicRol);
+export const getUserStoriesStatus = () => API.get('userstories/status');

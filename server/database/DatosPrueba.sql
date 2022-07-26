@@ -1,4 +1,4 @@
--- Active: 1656693754180@@localhost@3308@alkimyaDevKit
+-- Active: 1656814242853@@localhost@3308
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
@@ -78,13 +78,13 @@ INSERT INTO rol (nombreRol, descripcion, actores, idProyecto) VALUES
     ("Rol8", "Descripcion8", 1, 1)
 ;
 
-INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto) VALUES 
-    ("quiero1", "pueda1", "story1", "nota general1", 1, 1, 8, 1),
-    ("quiero2", "pueda2", "story2", "nota general2", 2, 2, 7, 2),
-    ("quiero3", "pueda3", "story3", "nota general3", 3, 3, 6, 3),
-    ("quiero4", "pueda4", "story4", "nota general4", 4, 4, 5, 4),
-    ("quiero5", "pueda5", "story5", "nota general5", 5, 5, 4, 5),
-    ("quiero6", "pueda6", "story6", "nota general6", 6, 6, 3, 6),
-    ("quiero7", "pueda7", "story7", "nota general7", 7, 7, 2, 7),
-    ("quiero7", "pueda7", "story7", "nota general7", 8, 8, 1, 8)
+INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto, Estatus) VALUES 
+    ("quiero1", "pueda1", "story1", "nota general1", 1, 1, 8, 1, 1),
+    ("quiero2", "pueda2", "story2", "nota general2", 2, 2, 7, 2, 2),
+    ("quiero3", "pueda3", "story3", "nota general3", 3, 3, 6, 3, 1),
+    ("quiero4", "pueda4", "story4", "nota general4", 4, 4, 5, 4, 3),
+    ("quiero5", "pueda5", "story5", "nota general5", 5, 5, 4, 5, 3),
+    ("quiero6", "pueda6", "story6", "nota general6", 6, 6, 3, 6, 2),
+    ("quiero7", "pueda7", "story7", "nota general7", 7, 7, 2, 7, 2),
+    ("quiero7", "pueda7", "story7", "nota general7", 8, 8, 1, 8, 1)
 ;

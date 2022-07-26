@@ -12,8 +12,8 @@ export const getUserStories = async (req, res) => {
 export const newUserStory = async (req, res) => {
 	try {
 		await db.query(
-			"INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto) VALUES \
-            (?,?,?,?,?,?,?,?)",
+			"INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto, Estatus) VALUES \
+            (?,?,?,?,?,?,?,?,1)",
 			[
 				req.body.quiero,
 				req.body.pueda,
@@ -23,6 +23,7 @@ export const newUserStory = async (req, res) => {
 				req.body.rol,
 				req.body.rolSecundario,
 				req.body.idProyecto,
+				
 			]
 		);
 		res.status(201).send(`User ${req.body.story} was successfully created`);
