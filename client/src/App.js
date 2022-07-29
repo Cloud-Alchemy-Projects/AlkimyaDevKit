@@ -19,7 +19,8 @@ function App() {
                     <GuardRoute exact path="/projects*" component={Projects}/>
                     <GuardRoute exact path="/story*" component={Stories}/>
                     <GuardRoute exact path="/clients*" component={Client}/>
-                    <Redirect to="/home" />
+                    <GuardRoute path="*" component={Home}/>
+                    <Redirect to="/" />
                 </Switch>
             </Router>
 		</>
