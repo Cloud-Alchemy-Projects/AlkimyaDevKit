@@ -3,8 +3,12 @@ import {sendProjects, newProject, getProjectStatus} from "../controllers/project
 
 const router = express.Router()
 
+//Generals
 router.get("/all", sendProjects)
-router.get("/status", getProjectStatus)
 router.post("/new", newProject)
+
+//Status
+router.get("/status", getProjectStatus)
+
 
 export default router;

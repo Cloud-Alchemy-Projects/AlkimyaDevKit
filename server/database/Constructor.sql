@@ -1,3 +1,4 @@
+-- Active: 1656814242853@@localhost@3308
 DROP DATABASE IF EXISTS alkimyaDevKit;
 CREATE DATABASE alkimyaDevKit
 CHARACTER SET utf8
@@ -75,7 +76,7 @@ CREATE TABLE epic
     IdEpic           INT auto_increment,
     nombreEpic       VARCHAR(100),
     descripcion      VARCHAR(200),
-    idProyecto        INT,
+    idProyecto       INT,
 
     FOREIGN KEY (idProyecto) REFERENCES proyectos (IdProyecto),
     PRIMARY KEY (IdEpic )
@@ -87,10 +88,18 @@ CREATE TABLE rol
     nombreRol        VARCHAR(100),
     descripcion      VARCHAR(200),
     actores          INT,
-    idProyecto        INT,
+    idProyecto       INT,
 
     FOREIGN KEY (idProyecto) REFERENCES proyectos (IdProyecto),
     PRIMARY KEY (IdRol)
+);
+
+CREATE TABLE estatusdeUserStory
+(
+    IdEstatusUS     INT auto_increment,
+    estatus         VARCHAR(30),
+
+    PRIMARY KEY (IdEstatusUS)
 );
 
 
@@ -103,18 +112,27 @@ CREATE TABLE UserStories
     notaGral          VARCHAR(100),
     epic              INT,
     rol               INT,
-    rolSecundario            INT,
+    rolSecundario     INT,
     idProyecto        INT,
+    Estatus           INT,
 
 
     FOREIGN KEY (epic) REFERENCES epic (IdEpic),
     FOREIGN KEY (rol) REFERENCES rol (IdRol),
     FOREIGN KEY (rolSecundario) REFERENCES rol (IdRol),
     FOREIGN KEY (idProyecto) REFERENCES proyectos (IdProyecto),
+    FOREIGN KEY (Estatus) REFERENCES estatusdeUserStory (IdEstatusUS),
     PRIMARY KEY (idUserStory)
 );
 
 -- Datos estaticos
+
+-- Estatus de UserStories
+INSERT INTO estatusdeUserStory(estatus) VALUES ('Backlog');
+INSERT INTO estatusdeUserStory(estatus) VALUES ('On Deck');
+INSERT INTO estatusdeUserStory(estatus) VALUES ('Active');
+INSERT INTO estatusdeUserStory(estatus) VALUES ('Complete');
+
 
 -- Estatus de proyectos
 INSERT INTO estatusdeProyecto(estatus) VALUES ('En espera');

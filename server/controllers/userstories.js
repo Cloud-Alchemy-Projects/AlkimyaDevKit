@@ -12,8 +12,8 @@ export const getUserStories = async (req, res) => {
 export const newUserStory = async (req, res) => {
 	try {
 		await db.query(
-			"INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto) VALUES \
-            (?,?,?,?,?,?,?,?)",
+			"INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundario, idProyecto, Estatus) VALUES \
+            (?,?,?,?,?,?,?,?,1)",
 			[
 				req.body.quiero,
 				req.body.pueda,
@@ -23,12 +23,23 @@ export const newUserStory = async (req, res) => {
 				req.body.rol,
 				req.body.rolSecundario,
 				req.body.idProyecto,
+				
 			]
 		);
 		res.status(201).send(`User ${req.body.story} was successfully created`);
 	} catch (error) {
 		console.log(error.message);
 	}
+};
+
+export const getUserStoryStatus = async(req, res) =>{ // GET STATUS OF USER STORIES
+
+    try {
+        const [rows, fields] = await db.query('SELECT * FROM estatusdeUserStory');
+        res.status(200).json(rows);
+    } catch (error) {
+        console.log(error.message)
+    }
 };
 
 export const getRoles = async (req, res) => {

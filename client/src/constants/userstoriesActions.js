@@ -5,3 +5,5 @@ export const FETCH_ALL_ROLES = 'FETCH_ALL_ROLES';
 export const CREATE_ROLE = 'CREATE_ROLE';
 export const FETCH_ALL_EPICS = 'FETCH_ALL_EPICS';
 export const CREATE_EPIC = 'CREATE_EPIC';
+export const FETCH_ALL_STATUS = 'FETCH_ALL_STATUS';
+export const CREATE_STATUS = 'CREATE_STATUS';
