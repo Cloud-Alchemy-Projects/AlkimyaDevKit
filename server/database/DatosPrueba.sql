@@ -1,4 +1,4 @@
--- Active: 1656814242853@@localhost@3308
+-- Active: 1656693754180@@localhost@3308@alkimyaDevKit
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (744,'Abraham','Merchant','Hanan','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (433,'Lupita','Ponce','Reyes','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
 INSERT INTO usuarios (NumUsuario,NombreUsuario,ApellidoPaterno,ApellidoMaterno,Contrasena,TipoDeUsuario) VALUES (566,'Jimena','Bautista','Alamilla','$2a$10$0Rx4O/yslEcBHyhnhsqrDOqZxaKfj/YKFEinMcTWi/ubFnG9Nl0Q6',1);
@@ -86,5 +86,5 @@ INSERT INTO UserStories (quiero, pueda, story, notaGral, epic, rol, rolSecundari
     ("quiero5", "pueda5", "story5", "nota general5", 5, 5, 4, 5, 3),
     ("quiero6", "pueda6", "story6", "nota general6", 6, 6, 3, 6, 2),
     ("quiero7", "pueda7", "story7", "nota general7", 7, 7, 2, 7, 2),
-    ("quiero7", "pueda7", "story7", "nota general7", 8, 8, 1, 8, 1)
+    ("quiero8", "pueda8", "story8", "nota general8", 8, 8, 1, 8, 1)
 ;

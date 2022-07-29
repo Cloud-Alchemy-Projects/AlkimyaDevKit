@@ -2,17 +2,10 @@ import {React} from 'react'
 import SearchBar from "../../components/searchBar/SearchBar"
 import StoriesForms from './components/StoriesForm/StoriesForms'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
-import AllStories from './components/AllStories'
+import AllStories from './components/AllStories/AllStories'
 import ToolsBar from "../../components/toolBar/ToolsBar"
-import { useDispatch, useSelector } from "react-redux";
-// import { getUserStoriesStatus } from "../../../../actions/userstories";
 
 const Stories = () => {
-
-    // const allBlacklog = useSelector((state) => state.users.fetchAllStatus);
-    // const allOndeck = useSelector((state) => state.users.fetchAllStatus);
-    // const allActive = useSelector((state) => state.users.fetchAllStatus);
-    // const allComplete = useSelector((state) => state.users.fetchAllStatus);
 
     return (
         <>

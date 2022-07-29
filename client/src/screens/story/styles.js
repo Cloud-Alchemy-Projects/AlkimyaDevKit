@@ -15,20 +15,12 @@ export default makeStyles(() => ({
         alignItems: 'center'
     },
     typoContainer:{ //Contenedor para el texto New User Story
-        width: "100%",
+        width: "auto",
 		display: "flex",
-		justifyContent: "left",
+        flexDirection: 'row',
+		justifyContent: "space-between",
 		alignItems: "center",
-		paddingTop: "20vh",
-		marginBottom: "20px",
-    },
-    projectsContainer:{ //Contenedor para el BOTON PROJECTS
-        width: "60.5%",
-		display: "flex",
-		justifyContent: "right",
-		alignItems: "center",
-        marginTop: '-60px',
-		marginBottom: "25px",
+        paddingTop: "20vh",
     },
     projectsTypo: {
         color: "#97004D",
@@ -41,11 +33,6 @@ export default makeStyles(() => ({
     },
     formsContainer: { //Contenedor para los campos de texto
         width: "45vw",
-        height: 'auto',
-		paddingBottom: '25px'
-    },
-    formsContainer_2: { //Contenedor para los campos de texto
-        width: "65vw",
         height: 'auto',
 		paddingBottom: '25px'
     },
@@ -139,21 +126,71 @@ export default makeStyles(() => ({
         borderRadius: "10px !important",
         fontFamily: 'var(--font-secondary-bold) !important'
     },
-    paperContainer:{ //ESTE ES EL CONTENEDOR DE LOS CUADROS ROSADOS
+    formsContainer_2: { //Contenedor para los campos de texto
+        width: "100%",
+        height: 'auto',
+		paddingBottom: '25px',
+        display: 'flex',
+        marginTop: '50px',
+        overflowX: 'auto',
+        whiteSpace: 'nowrap',
+    },
+    columnWrapper:{
+        display: 'flex',
+        gap: '10px'
+        
+    },
+    columnInfo:{ //ESTE ES EL CONTENEDOR DE LOS CUADROS ROSADOS
+        width: '250px',
         backgroundColor: '#E6E6E6 !important',
         borderRadius: '10px !important',
         height: "100%",
-        marginLeft: "25px !important"
+        padding: '15px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '20px',
+    },
+    topContainer:{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'space-between'
+    },
+    bottomContainer:{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center'
+    },
+    containerAllView:{ //Contenedor para el texto New User Story
+        width: "80%",
+		display: "flex",
+        flexDirection: 'column',
+		paddingTop: "20vh",
+		marginBottom: "20px",
+    },
+    topContainerAllUS:{ //Contenedor para el texto New User Story
+        width: "auto",
+		display: "flex",
+        flexDirection: 'row',
+		justifyContent: "space-between",
+		alignItems: "center",
+    },
+    buttonTopContainer:{
+        display: 'flex'
+    },
+    columnTypo:{
+        fontFamily: "var(--font-secondary-medium) !important"
     },
     boxContainer:{
-        width: "auto !important",
-        marginRight: '25px !important', 
-        height: "110px !important",
-        marginBottom: "5px !important",
-        display: 'flex !important',
-        displayDirection: 'column !important',
-        backgroundColor: '#E20074 !important',
-        borderRadius: '10px'
-    }
-    
+        width: "100%", 
+        height: "150px",
+        backgroundColor: 'rgba(226, 0, 116, 0.2)',
+        padding: '10px',
+    },
+    textInBox:{
+        whiteSpace: 'initial',
+        overflow: 'hidden',
+        color: 'black !important',
+        fontFamily: "var(--font-secondary-medium) !important"
+    },
 }));
