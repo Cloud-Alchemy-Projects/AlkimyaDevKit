@@ -59,7 +59,7 @@ CREATE TABLE estatusdeProyecto
 CREATE TABLE proyectos 
 (
     IdProyecto		INT auto_increment,
-    NombreProyecto	VARCHAR(20),
+    NombreProyecto	VARCHAR(100),
     Estatus			INT,
     Cliente			INT,
     Usuario			INT,
