@@ -8,7 +8,7 @@ import useStyle from "../styles";
 import {getUserStories} from "../../../actions/userstories.js"
 
 
-const AllStories = () => {
+const AllStories = ({allBlacklog, allOndeck, allActive, allComplete}) => {
 
     const classes = useStyle() 
     const history = useHistory()
@@ -33,9 +33,42 @@ const AllStories = () => {
     };
     const projectNames = [{id: 1, projectName: "Alkimya DevKit"}, {id: 2, projectName: "Vinculación de prácticas"}]
 
+    //Deficion del arreglo y el uso de .find para clasificar los ID de las UserStories
+    let blacklog = []
+    allBlacklog&& (blacklog = allBlacklog.find((o) => o.Estatus === story.projectId));
+    let ondeck = []
+    allOndeck&& (ondeck = allOndeck.find((o) => o.Estatus === story.projectId));
+    let active = []
+    allActive&& (active = allActive.find((o) => o.Estatus === story.projectId));
+    let complete = []
+    allComplete&& (complete = allComplete.find((o) => o.Estatus === story.projectId));
+    
+
+
     return (
         <div className={classes.mainContainer}>
             
+            {/* {(allUsers && allClients) === undefined ? PONER TODO ESTO Y MOVER FUERA DE ALLSTORIES.JSX
+				<div className={classes.circularContainer}>
+					<CircularProgress />
+				</div>
+			: 
+				<Form allUsers={allUsers} allClients={allClients} />
+			} */}
+
+                                    {/* return ( AGREGAR TODO ESTO DENTRO DEL BOX
+										<MenuItem
+											key={IdUsuario}
+											sx={{
+												fontFamily:
+													"var(--font-secondary-medium)",
+											}}
+											value={IdUsuario}
+										>
+											{`${NombreUsuario} ${ApellidoPaterno}`}
+										</MenuItem>
+									); */}
+
             <div className={classes.typoContainer}>
 
                 <Typography className={classes.projectsTypo} variant="h4">
