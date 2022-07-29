@@ -1,5 +1,5 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React, {useState} from "react";
+import { useHistory, NavLink, Redirect } from "react-router-dom";
 import { TextField, Button, InputAdornment, Typography } from "@mui/material";
 import useStyles from "../styles";
 import { AddCircleOutline, Search } from "@mui/icons-material";
@@ -7,9 +7,11 @@ import { AddCircleOutline, Search } from "@mui/icons-material";
 const TopBar = ({ color }) => {
 	const classes = useStyles();
 	const history = useHistory();
+    const [click, setClick] = useState(false);
 
 	return (
 		<>
+        {click && <Redirect to="projects/new" replace={true}/>}
 			<div className={classes.appBar}>
 				<div className={classes.rightContainer}>
 					<div className={classes.textToRight}>
@@ -23,16 +25,19 @@ const TopBar = ({ color }) => {
 					</div>
 				</div>
 				<div className={classes.leftContainer}>
+                {/* <NavLink strict to="projects/new"> */}
 					<Button
 						className={classes.buttonTop}
 						variant="contained"
 						startIcon={<AddCircleOutline />}
 						onClick={() => {
-							history.push("/projects/new");
+							// history.push("/projects/new");
+                            setClick(true)
 						}}
 					>
 						New Project
 					</Button>
+                    {/* </NavLink> */}
 					<TextField
 						className={classes.textField}
 						id="search-textfield"
