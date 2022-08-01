@@ -25,6 +25,9 @@ const BottomBar = () => {
             case "/story/new":
                 setValue(2);
                 break;
+            case "/home":
+                setValue(3);
+                break;
             default:
                 setValue(0);
                 break;

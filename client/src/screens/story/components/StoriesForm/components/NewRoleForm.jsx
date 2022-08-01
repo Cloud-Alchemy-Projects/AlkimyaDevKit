@@ -25,8 +25,7 @@ const NewRoleForm = ({ open, handleClose, proyecto }) => {
 	const dispatch = useDispatch();
 	const submit = (e) => {
 		e.preventDefault();
-		dispatch(newRole(rol));
-		dispatch(getRoles());
+		dispatch(newRole(rol)).then(dispatch(getRoles()))
 		setRol({
 			...rol,
 			nombreRol: "",

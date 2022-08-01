@@ -39,6 +39,11 @@ export default makeStyles(() => ({
 		marginTop: "20px !important",
 		fontFamily: "var(--font-secondary-bold) !important",
 	},
+	formsTypoNewCompany: {
+		color: "#97004D",
+		textTransform: "uppercase",
+		fontFamily: "var(--font-secondary-bold) !important",
+	},
 	textField: {
 		width: "100%",
 		[`& fieldset`]: {

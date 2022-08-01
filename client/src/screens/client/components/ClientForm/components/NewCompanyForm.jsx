@@ -15,17 +15,16 @@ import { newCompany, getCompanies } from "../../../../../actions/clients";
 
 const NewCompanyForm = ({ open, handleClose }) => {
 	const classes = useStyles();
-	
-    const [company, setCompany] = useState({
-		nombreCompania: ""
+
+	const [company, setCompany] = useState({
+		nombreCompania: "",
 	});
 
 	const dispatch = useDispatch();
 	const submit = (e) => {
 		e.preventDefault();
-		dispatch(newCompany(company));
-		dispatch(getCompanies());
-		setCompany({ ...company, nombreCompania: ""});
+		dispatch(newCompany(company)).then(dispatch(getCompanies()));
+		setCompany({ ...company, nombreCompania: "" });
 		handleClose();
 	};
 	return (
@@ -41,45 +40,36 @@ const NewCompanyForm = ({ open, handleClose }) => {
 				</DialogTitle>
 				<form onSubmit={submit}>
 					<DialogContent>
-						<Grid
-							container
-							rowSpacing={1}
-							columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+						<Typography
+							align="left"
+							variant="subtitle2"
+							className={classes.formsTypoNewCompany}
 						>
-							<Grid item xs={12}>
-								<Typography
-									align="left"
-									variant="subtitle2"
-									className={classes.formsTypo}
-								>
-									Company name
-								</Typography>
+							Company name
+						</Typography>
 
-								<TextField
-									required
-									hiddenLabel
-									type="text"
-									size="small"
-									value={company.nombreCompania}
-									className={classes.textField}
-									variant="outlined"
-									focused
-									InputProps={{
-										spellCheck: "false",
-										style: {
-											fontFamily:
-												"var(--font-secondary-medium)",
-										},
-									}}
-									onChange={(e) =>
-										setCompany({
-											...company,
-											nombreCompania: e.target.value,
-										})
-									}
-								/>
-							</Grid>
-						</Grid>
+						<TextField
+							required
+							hiddenLabel
+							type="text"
+							size="small"
+							value={company.nombreCompania}
+							className={classes.textField}
+							variant="outlined"
+							focused
+							InputProps={{
+								spellCheck: "false",
+								style: {
+									fontFamily: "var(--font-secondary-medium)",
+								},
+							}}
+							onChange={(e) =>
+								setCompany({
+									...company,
+									nombreCompania: e.target.value,
+								})
+							}
+						/>
 					</DialogContent>
 					<DialogActions>
 						<Button onClick={handleClose}>Cancel</Button>

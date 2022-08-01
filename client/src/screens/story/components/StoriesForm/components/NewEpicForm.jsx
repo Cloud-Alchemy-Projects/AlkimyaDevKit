@@ -24,8 +24,8 @@ const NewEpicForm = ({ open, handleClose, proyecto }) => {
 	const dispatch = useDispatch();
 	const submit = (e) => {
 		e.preventDefault();
-		dispatch(newEpic(epic));
-		dispatch(getEpics());
+		dispatch(newEpic(epic)).then(dispatch(getEpics()))
+		
 		setEpic({ ...epic, nombreEpic: "", descripcion: "", idProyecto: 0 });
 		handleClose();
 	};
@@ -87,7 +87,7 @@ const NewEpicForm = ({ open, handleClose, proyecto }) => {
 									variant="subtitle2"
 									className={classes.formsTypo}
 								>
-									ROLE DESCRIPTION
+									EPIC DESCRIPTION
 								</Typography>
 
 								<TextField

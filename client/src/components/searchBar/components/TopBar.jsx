@@ -4,14 +4,14 @@ import { TextField, Button, InputAdornment, Typography } from "@mui/material";
 import useStyles from "../styles";
 import { AddCircleOutline, Search } from "@mui/icons-material";
 
-const TopBar = ({ color }) => {
+const TopBar = ({ color, project }) => {
 	const classes = useStyles();
 	const history = useHistory();
-    const [click, setClick] = useState(false);
-
+    // const [click, setClick] = useState(false);
+    
 	return (
 		<>
-        {click && <Redirect to="projects/new" replace={true}/>}
+        {/* {click && <Redirect to="projects/new" replace={true}/>} */}
 			<div className={classes.appBar}>
 				<div className={classes.rightContainer}>
 					<div className={classes.textToRight}>
@@ -31,8 +31,9 @@ const TopBar = ({ color }) => {
 						variant="contained"
 						startIcon={<AddCircleOutline />}
 						onClick={() => {
-							// history.push("/projects/new");
-                            setClick(true)
+							history.push("/projects/new");
+                            // setClick(true)
+                            project && (window.location.reload())
 						}}
 					>
 						New Project
