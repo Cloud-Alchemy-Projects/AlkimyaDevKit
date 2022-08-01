@@ -11,7 +11,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 		fontFamily: "var(--font-secondary-bold)",
 		paddingLeft: "30px",
 	},
-	"&:first-child td": {
+	"&:first-of-type td": {
 		borderTop: "none",
 	},
 	"&:last-child td": {

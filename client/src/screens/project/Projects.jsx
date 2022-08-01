@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <>
             <ToolsBar/>
-            <SearchBar color="black"/>
+            <SearchBar color="black" project={true}/>
             <BrowserRouter basename="/projects">
                 <Switch>
                     <Route exact path='/' component={AllProjects}/>
